@@ -1,0 +1,58 @@
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+
+spring:
+  application:
+    name: WebExample
+
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:pgm-bp15w07805zfx1ykmo.pg.rds.aliyuncs.com}:${DB_PORT:5432}/${DB_NAME:jiaxinshihua}?useSSL=false&serverTimezone=UTC
+    driver-class-name: org.postgresql.Driver
+    username: ${DB_USERNAME:jiaxinshihua}
+    password: ${DB_PASSWORD:OrderIQ@2024}
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 300000
+      connection-timeout: 20000
+
+  # Redis配置
+  data:
+    redis:
+      host: ${REDIS_HOST:r-bp1lzhj825493nloz3pd.redis.rds.aliyuncs.com}
+      port: ${REDIS_PORT:6379}
+      username: ${REDIS_USERNAME:default}
+      password: ${REDIS_PASSWORD:OrderIQ@2024}
+      database: 0
+      timeout: 10000
+      client-type: lettuce
+      lettuce:
+        pool:
+          max-active: 8
+          max-wait: -1
+          max-idle: 8
+          min-idle: 0
+
+  cache:
+    type: redis
+    redis:
+      time-to-live: 1800000 # 默认缓存过期时间：30分钟
+      cache-null-values: false # 不缓存空值
+
+mybatis-plus:
+  type-aliases-package: com.lixh.webexample.data.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
