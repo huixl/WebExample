@@ -3,10 +3,9 @@ package com.lixh.webexample.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.lixh.webexample.data.entity.UserPo;
 import com.lixh.webexample.data.mapper.UserMapper;
-import com.lixh.webexample.ex.BusinessException;
 import com.lixh.webexample.service.LoginHistoryService;
+import com.lixh.webexample.service.LoginService;
 import com.lixh.webexample.service.TokenService;
-import com.lixh.webexample.service.UserService;
 import com.lixh.webexample.web.dto.*;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
@@ -31,7 +30,7 @@ import java.util.UUID;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class UserServiceImpl implements UserService {
+public class LoginServiceImpl implements LoginService {
 
     // 用户会话属性名
     private static final String USER_SESSION_KEY = "current_user";
@@ -55,13 +54,13 @@ public class UserServiceImpl implements UserService {
     public RegisterResponse register(RegisterRequest registerRequest) {
         // 验证两次密码是否一致
         if (!registerRequest.getPassword().equals(registerRequest.getConfirmPassword())) {
-            throw new BusinessException("两次输入的密码不一致");
+            throw new RuntimeException("两次输入的密码不一致");
         }
 
         // 检查用户名是否已存在
         UserPo existingUser = findByUsername(registerRequest.getUsername());
         if (existingUser != null) {
-            throw new BusinessException("用户名已存在");
+            throw new RuntimeException("用户名已存在");
         }
 
         // 检查邮箱是否已存在
@@ -69,7 +68,7 @@ public class UserServiceImpl implements UserService {
         queryWrapper.eq(UserPo::getEmail, registerRequest.getEmail());
         existingUser = userMapper.selectOne(queryWrapper);
         if (existingUser != null) {
-            throw new BusinessException("邮箱已被注册");
+            throw new RuntimeException("邮箱已被注册");
         }
 
         // 创建新用户
@@ -127,7 +126,7 @@ public class UserServiceImpl implements UserService {
             } catch (Exception e) {
                 log.error("记录登录失败历史失败", e);
             }
-            throw new BusinessException("用户名或密码错误");
+            throw new RuntimeException("用户名或密码错误");
         }
 
         // 验证密码
@@ -144,7 +143,7 @@ public class UserServiceImpl implements UserService {
             } catch (Exception e) {
                 log.error("记录登录失败历史失败", e);
             }
-            throw new BusinessException("用户名或密码错误");
+            throw new RuntimeException("用户名或密码错误");
         }
 
         // 验证用户状态
@@ -161,7 +160,7 @@ public class UserServiceImpl implements UserService {
             } catch (Exception e) {
                 log.error("记录登录失败历史失败", e);
             }
-            throw new BusinessException("账号已被禁用，请联系管理员");
+            throw new RuntimeException("账号已被禁用，请联系管理员");
         }
 
         // 创建令牌
@@ -339,7 +338,7 @@ public class UserServiceImpl implements UserService {
     public boolean verifyCurrentPassword(PasswordVerifyRequest passwordVerifyRequest) {
         UserPo currentUser = getCurrentUser();
         if (currentUser == null) {
-            throw new BusinessException("用户未登录");
+            throw new RuntimeException("用户未登录");
         }
 
         boolean matches = passwordEncoder.matches(passwordVerifyRequest.getCurrentPassword(),
@@ -368,7 +367,7 @@ public class UserServiceImpl implements UserService {
         // 1. 验证用户是否登录
         UserPo currentUser = getCurrentUser();
         if (currentUser == null) {
-            throw new BusinessException("用户未登录");
+            throw new RuntimeException("用户未登录");
         }
 
         // 2. 验证当前密码是否正确

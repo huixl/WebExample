@@ -1,7 +1,7 @@
 package com.lixh.webexample.config;
 
 import com.lixh.webexample.data.entity.UserPo;
-import com.lixh.webexample.service.UserService;
+import com.lixh.webexample.service.LoginService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
@@ -20,7 +20,7 @@ import org.springframework.web.servlet.ModelAndView;
 @RequiredArgsConstructor
 public class UserContextInterceptor implements HandlerInterceptor {
 
-    private final UserService userService;
+    private final LoginService userService;
 
     @Override
     public boolean preHandle(@NotNull HttpServletRequest request, @NotNull HttpServletResponse response,

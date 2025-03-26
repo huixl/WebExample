@@ -1,6 +1,5 @@
-package com.lixh.webexample.web.controller;
+package com.lixh.webexample.web.exception;
 
-import com.lixh.webexample.ex.BusinessException;
 import com.lixh.webexample.web.dto.ApiError;
 import com.lixh.webexample.web.dto.ApiResponse;
 import jakarta.validation.ConstraintViolationException;
@@ -20,12 +19,6 @@ public class GlobalExceptionHandler {
     public ApiResponse<Void> handleException(Exception e) {
         log.error("Unexpected exception", e);
         return ApiResponse.error(ApiError.SYSTEM_ERROR);
-    }
-
-    @ExceptionHandler(BusinessException.class)
-    public ApiResponse<Void> handleBusinessException(BusinessException e) {
-        log.error("Business exception", e);
-        return ApiResponse.error(ApiError.OPERATION_FAILED.getCode(), e.getMessage());
     }
 
     @ExceptionHandler({

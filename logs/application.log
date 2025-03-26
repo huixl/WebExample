@@ -559,3 +559,805 @@ This generated password is for development use only. Your security configuration
 2025-03-26 17:50:17.956  INFO 62826 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9000 (http) with context path ''
 2025-03-26 17:50:17.968  INFO 62826 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Started WebExampleApplication in 1.98 seconds (process running for 2.3)
 2025-03-26 17:50:17.985  INFO 62826 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : WebExample Application started
+2025-03-26 20:23:13.190  INFO 9256 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 8.0.1.Final
+2025-03-26 20:23:13.212  INFO 9256 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Starting WebExampleApplication using Java 17.0.2 with PID 9256 (D:\IDE\LixhProject\WebExample\target\classes started by Admin in D:\IDE\LixhProject\WebExample)
+2025-03-26 20:23:13.213  INFO 9256 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-26 20:23:13.234  INFO 9256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-26 20:23:13.234  INFO 9256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-26 20:23:13.762  INFO 9256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 20:23:13.765  INFO 9256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 20:23:13.778  INFO 9256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2025-03-26 20:23:13.846  WARN 9256 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lixh.webexample]' package. Please check your configuration.
+2025-03-26 20:23:14.258  INFO 9256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2025-03-26 20:23:14.297  INFO 9256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1063 ms
+2025-03-26 20:23:15.035  WARN 9256 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a68c83ed-ea6e-4489-8ced-73545ca29576
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-26 20:23:15.094  INFO 9256 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-03-26 20:23:15.108  INFO 9256 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4efca1e1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@394b39e3, org.springframework.security.web.context.SecurityContextHolderFilter@89113fe, org.springframework.security.web.header.HeaderWriterFilter@13491966, org.springframework.web.filter.CorsFilter@394fccbd, org.springframework.security.web.csrf.CsrfFilter@2536e02c, org.springframework.security.web.authentication.logout.LogoutFilter@1195f045, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2a205fdd, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4b0fe610, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@56b4c85e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1809c9b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6bf273e7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5287b269, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7dec88c0, org.springframework.security.web.access.ExceptionTranslationFilter@7416550d, org.springframework.security.web.access.intercept.AuthorizationFilter@277b6fef]
+2025-03-26 20:23:15.175  WARN 9256 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2025-03-26 20:23:15.218  INFO 9256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-26 20:23:15.249  INFO 9256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9000 (http) with context path ''
+2025-03-26 20:23:15.258  INFO 9256 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Started WebExampleApplication in 2.219 seconds (process running for 2.604)
+2025-03-26 20:23:15.264  INFO 9256 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : WebExample Application started
+2025-03-26 20:23:15.451  INFO 9256 --- [RMI TCP Connection(1)-198.18.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-26 20:23:15.453  INFO 9256 --- [RMI TCP Connection(1)-198.18.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-26 20:23:17.874  INFO 9256 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 217 class path changes (217 additions, 0 deletions, 0 modifications)
+2025-03-26 20:23:18.057  INFO 9256 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Starting WebExampleApplication using Java 17.0.2 with PID 9256 (D:\IDE\LixhProject\WebExample\target\classes started by Admin in D:\IDE\LixhProject\WebExample)
+2025-03-26 20:23:18.057  INFO 9256 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-26 20:23:18.156  INFO 9256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 20:23:18.156  INFO 9256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 20:23:18.183  INFO 9256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
+2025-03-26 20:23:18.238  INFO 9256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2025-03-26 20:23:18.252  INFO 9256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 194 ms
+2025-03-26 20:23:18.460  WARN 9256 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8153c864-c697-49cc-b87b-0c94ad66769e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-26 20:23:18.471  INFO 9256 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-03-26 20:23:18.479  INFO 9256 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6c45de6d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36a180fa, org.springframework.security.web.context.SecurityContextHolderFilter@307bce6d, org.springframework.security.web.header.HeaderWriterFilter@1345ad7b, org.springframework.web.filter.CorsFilter@48e56b7e, org.springframework.security.web.csrf.CsrfFilter@6dc2c41a, org.springframework.security.web.authentication.logout.LogoutFilter@65e2d547, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@a23628a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4e573448, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1e2cbfd9, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@75d5fd72, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ee2a778, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@730d55c2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5cd8acc7, org.springframework.security.web.access.ExceptionTranslationFilter@78711452, org.springframework.security.web.access.intercept.AuthorizationFilter@503cf2c6]
+2025-03-26 20:23:18.498  WARN 9256 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2025-03-26 20:23:18.520  INFO 9256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-26 20:23:18.611  WARN 9256 --- [restartedMain] c.b.m.core.injector.methods.Insert       : [com.lixh.webexample.data.mapper.FieldMappingMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2025-03-26 20:23:18.613  WARN 9256 --- [restartedMain] c.b.m.core.injector.methods.Update       : [com.lixh.webexample.data.mapper.FieldMappingMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2025-03-26 20:23:18.699  INFO 9256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9000 (http) with context path ''
+2025-03-26 20:23:18.703  INFO 9256 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Started WebExampleApplication in 0.663 seconds (process running for 6.049)
+2025-03-26 20:23:18.704  INFO 9256 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-26 20:23:18.705  INFO 9256 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : WebExample Application started
+2025-03-26 20:23:38.402  INFO 17612 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 8.0.1.Final
+2025-03-26 20:23:38.418  INFO 17612 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Starting WebExampleApplication using Java 17.0.2 with PID 17612 (D:\IDE\LixhProject\WebExample\target\classes started by Admin in D:\IDE\LixhProject\WebExample)
+2025-03-26 20:23:38.418  INFO 17612 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-26 20:23:38.435  INFO 17612 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-26 20:23:38.435  INFO 17612 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-26 20:23:38.844  INFO 17612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 20:23:38.845  INFO 17612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 20:23:38.888  INFO 17612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 0 Redis repository interfaces.
+2025-03-26 20:23:39.260  INFO 17612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2025-03-26 20:23:39.292  INFO 17612 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 856 ms
+2025-03-26 20:23:39.921  WARN 17612 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 059fd35b-b02a-4eef-a4cd-ad009fc9117c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-26 20:23:39.984  INFO 17612 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-03-26 20:23:39.997  INFO 17612 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@c3468da, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b49d0bc, org.springframework.security.web.context.SecurityContextHolderFilter@24e5bb90, org.springframework.security.web.header.HeaderWriterFilter@4b904d1c, org.springframework.web.filter.CorsFilter@69ff3289, org.springframework.security.web.csrf.CsrfFilter@124278a8, org.springframework.security.web.authentication.logout.LogoutFilter@65024d6e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7ad04b8c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@42e0844a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@69f4d0c7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1e3d9290, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2fae2ee5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3356f486, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4629079b, org.springframework.security.web.access.ExceptionTranslationFilter@35de48bb, org.springframework.security.web.access.intercept.AuthorizationFilter@22f9c9c7]
+2025-03-26 20:23:40.059  WARN 17612 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2025-03-26 20:23:40.106  INFO 17612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-26 20:23:40.192  WARN 17612 --- [restartedMain] c.b.m.core.injector.methods.Insert       : [com.lixh.webexample.data.mapper.FieldMappingMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2025-03-26 20:23:40.193  WARN 17612 --- [restartedMain] c.b.m.core.injector.methods.Update       : [com.lixh.webexample.data.mapper.FieldMappingMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2025-03-26 20:23:40.300  INFO 17612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9000 (http) with context path ''
+2025-03-26 20:23:40.308  INFO 17612 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Started WebExampleApplication in 2.037 seconds (process running for 2.637)
+2025-03-26 20:23:40.312  INFO 17612 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : WebExample Application started
+2025-03-26 20:23:40.415  INFO 17612 --- [RMI TCP Connection(1)-198.18.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-26 20:23:40.415  INFO 17612 --- [RMI TCP Connection(1)-198.18.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-03-26 20:25:18.735  INFO 17612 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-03-26 20:25:18.905  INFO 17612 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Starting WebExampleApplication using Java 17.0.2 with PID 17612 (D:\IDE\LixhProject\WebExample\target\classes started by Admin in D:\IDE\LixhProject\WebExample)
+2025-03-26 20:25:18.905  INFO 17612 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-26 20:25:19.028  INFO 17612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 20:25:19.028  INFO 17612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 20:25:19.044  INFO 17612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2025-03-26 20:25:19.105  INFO 17612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2025-03-26 20:25:19.119  INFO 17612 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 213 ms
+2025-03-26 20:25:19.342  WARN 17612 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b891b801-f08c-453c-a406-0c68a746fc86
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-26 20:25:19.354  INFO 17612 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-03-26 20:25:19.362  INFO 17612 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@69b348e7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21090eab, org.springframework.security.web.context.SecurityContextHolderFilter@4abe9581, org.springframework.security.web.header.HeaderWriterFilter@5604b1f7, org.springframework.web.filter.CorsFilter@5cc5f999, org.springframework.security.web.csrf.CsrfFilter@12d808b3, org.springframework.security.web.authentication.logout.LogoutFilter@74b994f5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5a63cf41, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4f3bbc8d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6f8fa55d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@9782143, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e6d448c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7129b2a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1c883c3b, org.springframework.security.web.access.ExceptionTranslationFilter@39012d22, org.springframework.security.web.access.intercept.AuthorizationFilter@4f9da2c]
+2025-03-26 20:25:19.381  WARN 17612 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2025-03-26 20:25:19.401  INFO 17612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-26 20:25:19.421  WARN 17612 --- [restartedMain] c.b.m.core.injector.methods.Insert       : [com.lixh.webexample.data.mapper.FieldMappingMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2025-03-26 20:25:19.422  WARN 17612 --- [restartedMain] c.b.m.core.injector.methods.Update       : [com.lixh.webexample.data.mapper.FieldMappingMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2025-03-26 20:25:19.489  INFO 17612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9000 (http) with context path ''
+2025-03-26 20:25:19.494  INFO 17612 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Started WebExampleApplication in 0.603 seconds (process running for 101.822)
+2025-03-26 20:25:19.495  INFO 17612 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-26 20:25:19.495  INFO 17612 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : WebExample Application started
+2025-03-26 20:25:20.837  INFO 17612 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-03-26 20:25:20.901  INFO 17612 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Starting WebExampleApplication using Java 17.0.2 with PID 17612 (D:\IDE\LixhProject\WebExample\target\classes started by Admin in D:\IDE\LixhProject\WebExample)
+2025-03-26 20:25:20.902  INFO 17612 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-26 20:25:21.016  INFO 17612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 20:25:21.016  INFO 17612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 20:25:21.030  INFO 17612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2025-03-26 20:25:21.095  INFO 17612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2025-03-26 20:25:21.109  INFO 17612 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 207 ms
+2025-03-26 20:25:21.345  WARN 17612 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e3c24221-c5dc-4753-a97e-3110f72a92a1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-26 20:25:21.357  INFO 17612 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-03-26 20:25:21.364  INFO 17612 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@e557281, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18a08d59, org.springframework.security.web.context.SecurityContextHolderFilter@200bc8fd, org.springframework.security.web.header.HeaderWriterFilter@5867dd86, org.springframework.web.filter.CorsFilter@15f57099, org.springframework.security.web.csrf.CsrfFilter@49c90d02, org.springframework.security.web.authentication.logout.LogoutFilter@70b0f76a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@53180d9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@26b77277, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4125e95e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@494bf51f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@584d6dfb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b3b742e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64c15a81, org.springframework.security.web.access.ExceptionTranslationFilter@578a1bb7, org.springframework.security.web.access.intercept.AuthorizationFilter@35ad79f]
+2025-03-26 20:25:21.388  WARN 17612 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2025-03-26 20:25:21.409  INFO 17612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-26 20:25:21.429  WARN 17612 --- [restartedMain] c.b.m.core.injector.methods.Insert       : [com.lixh.webexample.data.mapper.FieldMappingMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2025-03-26 20:25:21.430  WARN 17612 --- [restartedMain] c.b.m.core.injector.methods.Update       : [com.lixh.webexample.data.mapper.FieldMappingMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2025-03-26 20:25:21.490  INFO 17612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9000 (http) with context path ''
+2025-03-26 20:25:21.495  INFO 17612 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Started WebExampleApplication in 0.608 seconds (process running for 103.824)
+2025-03-26 20:25:21.496  INFO 17612 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-26 20:25:21.496  INFO 17612 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : WebExample Application started
+2025-03-26 20:26:20.367  INFO 17288 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 8.0.1.Final
+2025-03-26 20:26:20.383  INFO 17288 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Starting WebExampleApplication using Java 17.0.2 with PID 17288 (D:\IDE\LixhProject\WebExample\target\classes started by Admin in D:\IDE\LixhProject\WebExample)
+2025-03-26 20:26:20.383  INFO 17288 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-26 20:26:20.402  INFO 17288 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-26 20:26:20.402  INFO 17288 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-26 20:26:20.483  INFO 17288 --- [restartedMain] o.s.c.i.support.PropertySourceProcessor  : Properties location [file:.env] not resolvable: .env (系统找不到指定的文件。)
+2025-03-26 20:26:20.833  INFO 17288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 20:26:20.834  INFO 17288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 20:26:20.850  INFO 17288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2025-03-26 20:26:20.899  WARN 17288 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lixh.webexample.mapper]' package. Please check your configuration.
+2025-03-26 20:26:21.229  INFO 17288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2025-03-26 20:26:21.261  INFO 17288 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 859 ms
+2025-03-26 20:26:21.318 ERROR 17288 --- [restartedMain] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'webConfig' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\config\WebConfig.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'userContextInterceptor' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\config\UserContextInterceptor.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\impl\UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.lixh.webexample.data.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-03-26 20:26:21.333  WARN 17288 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2025-03-26 20:26:21.339  INFO 17288 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-26 20:26:21.351 ERROR 17288 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.lixh.webexample.service.impl.UserServiceImpl required a bean of type 'com.lixh.webexample.data.mapper.UserMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.lixh.webexample.data.mapper.UserMapper' in your configuration.
+
+2025-03-26 20:28:48.499  INFO 15412 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 8.0.1.Final
+2025-03-26 20:28:48.516  INFO 15412 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Starting WebExampleApplication using Java 17.0.2 with PID 15412 (D:\IDE\LixhProject\WebExample\target\classes started by Admin in D:\IDE\LixhProject\WebExample)
+2025-03-26 20:28:48.516  INFO 15412 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-26 20:28:48.533  INFO 15412 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-26 20:28:48.533  INFO 15412 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-26 20:28:48.618  INFO 15412 --- [restartedMain] o.s.c.i.support.PropertySourceProcessor  : Properties location [file:.env] not resolvable: .env (系统找不到指定的文件。)
+2025-03-26 20:28:49.001  INFO 15412 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 20:28:49.003  INFO 15412 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 20:28:49.019  INFO 15412 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-03-26 20:28:49.070  WARN 15412 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lixh.webexample.mapper]' package. Please check your configuration.
+2025-03-26 20:28:49.074  WARN 15412 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'parserAssistant' for bean class [com.lixh.webexample.service.ai.ParserAssistant] conflicts with existing, non-compatible bean definition of same name and class [null]
+2025-03-26 20:28:49.082  INFO 15412 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-26 20:28:49.091 ERROR 15412 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'parserAssistant' for bean class [com.lixh.webexample.service.ai.ParserAssistant] conflicts with existing, non-compatible bean definition of same name and class [null]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.checkCandidate(ClassPathMapperScanner.java:345)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:230)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scan(ClassPathBeanDefinitionScanner.java:255)
+	at org.mybatis.spring.mapper.MapperScannerConfigurer.postProcessBeanDefinitionRegistry(MapperScannerConfigurer.java:381)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:148)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:788)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:606)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.lixh.webexample.WebExampleApplication.main(WebExampleApplication.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+
+2025-03-26 20:29:07.697  INFO 6360 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 8.0.1.Final
+2025-03-26 20:29:07.713  INFO 6360 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Starting WebExampleApplication using Java 17.0.2 with PID 6360 (D:\IDE\LixhProject\WebExample\target\classes started by Admin in D:\IDE\LixhProject\WebExample)
+2025-03-26 20:29:07.714  INFO 6360 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-26 20:29:07.734  INFO 6360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-26 20:29:07.734  INFO 6360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-26 20:29:07.816  INFO 6360 --- [restartedMain] o.s.c.i.support.PropertySourceProcessor  : Properties location [file:.env] not resolvable: .env (系统找不到指定的文件。)
+2025-03-26 20:29:08.209  INFO 6360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 20:29:08.210  INFO 6360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 20:29:08.228  INFO 6360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-03-26 20:29:08.279  WARN 6360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lixh.webexample.mapper]' package. Please check your configuration.
+2025-03-26 20:29:08.640  INFO 6360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2025-03-26 20:29:08.677  INFO 6360 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 942 ms
+2025-03-26 20:29:08.743 ERROR 6360 --- [restartedMain] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'webConfig' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\config\WebConfig.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'userContextInterceptor' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\config\UserContextInterceptor.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\impl\UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.lixh.webexample.data.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-03-26 20:29:08.759  WARN 6360 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2025-03-26 20:29:08.765  INFO 6360 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-26 20:29:08.774 ERROR 6360 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.lixh.webexample.service.impl.UserServiceImpl required a bean of type 'com.lixh.webexample.data.mapper.UserMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.lixh.webexample.data.mapper.UserMapper' in your configuration.
+
+2025-03-26 20:29:23.763  INFO 22156 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 8.0.1.Final
+2025-03-26 20:29:23.774  INFO 22156 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Starting WebExampleApplication using Java 17.0.2 with PID 22156 (D:\IDE\LixhProject\WebExample\target\classes started by Admin in D:\IDE\LixhProject\WebExample)
+2025-03-26 20:29:23.774  INFO 22156 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-26 20:29:23.800  INFO 22156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-26 20:29:23.800  INFO 22156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-26 20:29:23.881  INFO 22156 --- [restartedMain] o.s.c.i.support.PropertySourceProcessor  : Properties location [file:.env] not resolvable: .env (系统找不到指定的文件。)
+2025-03-26 20:29:24.270  INFO 22156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 20:29:24.271  INFO 22156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 20:29:24.293  INFO 22156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2025-03-26 20:29:24.346  WARN 22156 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lixh.webexample.mapper]' package. Please check your configuration.
+2025-03-26 20:29:24.351  WARN 22156 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'parserAssistant' for bean class [com.lixh.webexample.service.ai.ParserAssistant] conflicts with existing, non-compatible bean definition of same name and class [null]
+2025-03-26 20:29:24.358  INFO 22156 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-26 20:29:24.367 ERROR 22156 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'parserAssistant' for bean class [com.lixh.webexample.service.ai.ParserAssistant] conflicts with existing, non-compatible bean definition of same name and class [null]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.checkCandidate(ClassPathMapperScanner.java:345)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:230)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scan(ClassPathBeanDefinitionScanner.java:255)
+	at org.mybatis.spring.mapper.MapperScannerConfigurer.postProcessBeanDefinitionRegistry(MapperScannerConfigurer.java:381)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:148)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:788)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:606)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.lixh.webexample.WebExampleApplication.main(WebExampleApplication.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+
+2025-03-26 20:32:40.027  INFO 20180 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 8.0.1.Final
+2025-03-26 20:32:40.049  INFO 20180 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Starting WebExampleApplication using Java 17.0.2 with PID 20180 (D:\IDE\LixhProject\WebExample\target\classes started by Admin in D:\IDE\LixhProject\WebExample)
+2025-03-26 20:32:40.049  INFO 20180 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-26 20:32:40.069  INFO 20180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-26 20:32:40.069  INFO 20180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-26 20:32:40.151  INFO 20180 --- [restartedMain] o.s.c.i.support.PropertySourceProcessor  : Properties location [file:.env] not resolvable: .env (系统找不到指定的文件。)
+2025-03-26 20:32:40.542  INFO 20180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 20:32:40.544  INFO 20180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 20:32:40.565  INFO 20180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2025-03-26 20:32:40.635  WARN 20180 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lixh.webexample.mapper]' package. Please check your configuration.
+2025-03-26 20:32:41.082  INFO 20180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2025-03-26 20:32:41.118  INFO 20180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1048 ms
+2025-03-26 20:32:41.697  WARN 20180 --- [restartedMain] c.b.m.core.injector.methods.Insert       : [com.lixh.webexample.data.mapper.FieldMappingMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2025-03-26 20:32:41.698  WARN 20180 --- [restartedMain] c.b.m.core.injector.methods.Update       : [com.lixh.webexample.data.mapper.FieldMappingMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2025-03-26 20:32:41.752  WARN 20180 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'siliconFlowModelClient' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\adapter\SiliconFlowModelClient.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'orderDecompositionBiz': Unsatisfied dependency expressed through field 'parseTaskService': Error creating bean with name 'parseTaskService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParseTaskService.class]: Unsatisfied dependency expressed through constructor parameter 5: Error creating bean with name 'parserService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'parserAssistant' defined in class path resource [com/lixh/webexample/config/ParserAssistantConfig.class]: Failed to instantiate [com.lixh.webexample.service.ai.ParserAssistant]: Factory method 'parserAssistant' threw exception with message: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+2025-03-26 20:32:41.768  INFO 20180 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-26 20:32:41.777 ERROR 20180 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'siliconFlowModelClient' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\adapter\SiliconFlowModelClient.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'orderDecompositionBiz': Unsatisfied dependency expressed through field 'parseTaskService': Error creating bean with name 'parseTaskService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParseTaskService.class]: Unsatisfied dependency expressed through constructor parameter 5: Error creating bean with name 'parserService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'parserAssistant' defined in class path resource [com/lixh/webexample/config/ParserAssistantConfig.class]: Failed to instantiate [com.lixh.webexample.service.ai.ParserAssistant]: Factory method 'parserAssistant' threw exception with message: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.lixh.webexample.WebExampleApplication.main(WebExampleApplication.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderDecompositionBiz': Unsatisfied dependency expressed through field 'parseTaskService': Error creating bean with name 'parseTaskService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParseTaskService.class]: Unsatisfied dependency expressed through constructor parameter 5: Error creating bean with name 'parserService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'parserAssistant' defined in class path resource [com/lixh/webexample/config/ParserAssistantConfig.class]: Failed to instantiate [com.lixh.webexample.service.ai.ParserAssistant]: Factory method 'parserAssistant' threw exception with message: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1689)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeanMap(DefaultListableBeanFactory.java:1575)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1392)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:907)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:785)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'parseTaskService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParseTaskService.class]: Unsatisfied dependency expressed through constructor parameter 5: Error creating bean with name 'parserService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'parserAssistant' defined in class path resource [com/lixh/webexample/config/ParserAssistantConfig.class]: Failed to instantiate [com.lixh.webexample.service.ai.ParserAssistant]: Factory method 'parserAssistant' threw exception with message: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'parserService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'parserAssistant' defined in class path resource [com/lixh/webexample/config/ParserAssistantConfig.class]: Failed to instantiate [com.lixh.webexample.service.ai.ParserAssistant]: Factory method 'parserAssistant' threw exception with message: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:907)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:785)
+	... 56 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'parserAssistant' defined in class path resource [com/lixh/webexample/config/ParserAssistantConfig.class]: Failed to instantiate [com.lixh.webexample.service.ai.ParserAssistant]: Factory method 'parserAssistant' threw exception with message: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:639)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:907)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:785)
+	... 70 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.lixh.webexample.service.ai.ParserAssistant]: Factory method 'parserAssistant' threw exception with message: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:647)
+	... 84 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+	at com.lixh.webexample.config.ParserAssistantConfig.parserAssistant(ParserAssistantConfig.java:50)
+	at com.lixh.webexample.config.ParserAssistantConfig$$SpringCGLIB$$0.CGLIB$parserAssistant$0(<generated>)
+	at com.lixh.webexample.config.ParserAssistantConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.lixh.webexample.config.ParserAssistantConfig$$SpringCGLIB$$0.parserAssistant(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+	... 85 common frames omitted
+
+2025-03-26 20:33:11.914  INFO 4492 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 8.0.1.Final
+2025-03-26 20:33:11.931  INFO 4492 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Starting WebExampleApplication using Java 17.0.2 with PID 4492 (D:\IDE\LixhProject\WebExample\target\classes started by Admin in D:\IDE\LixhProject\WebExample)
+2025-03-26 20:33:11.932  INFO 4492 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-26 20:33:11.947  INFO 4492 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-26 20:33:11.947  INFO 4492 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-26 20:33:12.355  INFO 4492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 20:33:12.357  INFO 4492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 20:33:12.401  INFO 4492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 0 Redis repository interfaces.
+2025-03-26 20:33:12.796  INFO 4492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2025-03-26 20:33:12.831  INFO 4492 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 884 ms
+2025-03-26 20:33:13.474  WARN 4492 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: debb246f-736c-40d4-92da-7ffd2dab6500
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-26 20:33:13.528  INFO 4492 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-03-26 20:33:13.542  INFO 4492 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@9240fa8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62af16f2, org.springframework.security.web.context.SecurityContextHolderFilter@6a339ead, org.springframework.security.web.header.HeaderWriterFilter@3c872d9b, org.springframework.web.filter.CorsFilter@170c02af, org.springframework.security.web.csrf.CsrfFilter@b314a6f, org.springframework.security.web.authentication.logout.LogoutFilter@4b090658, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@8ae6722, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3fdedb3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3501cd78, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1d5b00f3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7387d266, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d940dd4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1cf1cd3f, org.springframework.security.web.access.ExceptionTranslationFilter@384274e7, org.springframework.security.web.access.intercept.AuthorizationFilter@599ef2e5]
+2025-03-26 20:33:13.606  WARN 4492 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2025-03-26 20:33:13.663  INFO 4492 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-26 20:33:13.782  WARN 4492 --- [restartedMain] c.b.m.core.injector.methods.Insert       : [com.lixh.webexample.data.mapper.FieldMappingMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2025-03-26 20:33:13.785  WARN 4492 --- [restartedMain] c.b.m.core.injector.methods.Update       : [com.lixh.webexample.data.mapper.FieldMappingMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2025-03-26 20:33:13.977  INFO 4492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9000 (http) with context path ''
+2025-03-26 20:33:13.985  INFO 4492 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Started WebExampleApplication in 2.199 seconds (process running for 2.636)
+2025-03-26 20:33:13.989  INFO 4492 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : WebExample Application started
+2025-03-26 20:33:14.557  INFO 4492 --- [RMI TCP Connection(1)-198.18.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-26 20:33:14.558  INFO 4492 --- [RMI TCP Connection(1)-198.18.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-26 20:33:30.412  INFO 13108 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 8.0.1.Final
+2025-03-26 20:33:30.426  INFO 13108 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Starting WebExampleApplication using Java 17.0.2 with PID 13108 (D:\IDE\LixhProject\WebExample\target\classes started by Admin in D:\IDE\LixhProject\WebExample)
+2025-03-26 20:33:30.426  INFO 13108 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-26 20:33:30.447  INFO 13108 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-26 20:33:30.447  INFO 13108 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-26 20:33:30.517  INFO 13108 --- [restartedMain] o.s.c.i.support.PropertySourceProcessor  : Properties location [file:.env] not resolvable: .env (系统找不到指定的文件。)
+2025-03-26 20:33:30.931  INFO 13108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 20:33:30.932  INFO 13108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 20:33:30.949  INFO 13108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-03-26 20:33:31.003  WARN 13108 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lixh.webexample.mapper]' package. Please check your configuration.
+2025-03-26 20:33:31.384  INFO 13108 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2025-03-26 20:33:31.422  INFO 13108 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 975 ms
+2025-03-26 20:33:32.056  WARN 13108 --- [restartedMain] c.b.m.core.injector.methods.Insert       : [com.lixh.webexample.data.mapper.FieldMappingMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2025-03-26 20:33:32.058  WARN 13108 --- [restartedMain] c.b.m.core.injector.methods.Update       : [com.lixh.webexample.data.mapper.FieldMappingMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2025-03-26 20:33:32.137  WARN 13108 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'siliconFlowModelClient' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\adapter\SiliconFlowModelClient.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'orderDecompositionBiz': Unsatisfied dependency expressed through field 'parseTaskService': Error creating bean with name 'parseTaskService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParseTaskService.class]: Unsatisfied dependency expressed through constructor parameter 5: Error creating bean with name 'parserService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'parserAssistant' defined in class path resource [com/lixh/webexample/config/ParserAssistantConfig.class]: Failed to instantiate [com.lixh.webexample.service.ai.ParserAssistant]: Factory method 'parserAssistant' threw exception with message: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+2025-03-26 20:33:32.152  INFO 13108 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-26 20:33:32.163 ERROR 13108 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'siliconFlowModelClient' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\adapter\SiliconFlowModelClient.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'orderDecompositionBiz': Unsatisfied dependency expressed through field 'parseTaskService': Error creating bean with name 'parseTaskService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParseTaskService.class]: Unsatisfied dependency expressed through constructor parameter 5: Error creating bean with name 'parserService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'parserAssistant' defined in class path resource [com/lixh/webexample/config/ParserAssistantConfig.class]: Failed to instantiate [com.lixh.webexample.service.ai.ParserAssistant]: Factory method 'parserAssistant' threw exception with message: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.lixh.webexample.WebExampleApplication.main(WebExampleApplication.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderDecompositionBiz': Unsatisfied dependency expressed through field 'parseTaskService': Error creating bean with name 'parseTaskService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParseTaskService.class]: Unsatisfied dependency expressed through constructor parameter 5: Error creating bean with name 'parserService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'parserAssistant' defined in class path resource [com/lixh/webexample/config/ParserAssistantConfig.class]: Failed to instantiate [com.lixh.webexample.service.ai.ParserAssistant]: Factory method 'parserAssistant' threw exception with message: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1689)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeanMap(DefaultListableBeanFactory.java:1575)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1392)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:907)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:785)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'parseTaskService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParseTaskService.class]: Unsatisfied dependency expressed through constructor parameter 5: Error creating bean with name 'parserService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'parserAssistant' defined in class path resource [com/lixh/webexample/config/ParserAssistantConfig.class]: Failed to instantiate [com.lixh.webexample.service.ai.ParserAssistant]: Factory method 'parserAssistant' threw exception with message: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'parserService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'parserAssistant' defined in class path resource [com/lixh/webexample/config/ParserAssistantConfig.class]: Failed to instantiate [com.lixh.webexample.service.ai.ParserAssistant]: Factory method 'parserAssistant' threw exception with message: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:907)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:785)
+	... 56 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'parserAssistant' defined in class path resource [com/lixh/webexample/config/ParserAssistantConfig.class]: Failed to instantiate [com.lixh.webexample.service.ai.ParserAssistant]: Factory method 'parserAssistant' threw exception with message: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:639)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:907)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:785)
+	... 70 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.lixh.webexample.service.ai.ParserAssistant]: Factory method 'parserAssistant' threw exception with message: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:647)
+	... 84 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+	at com.lixh.webexample.config.ParserAssistantConfig.parserAssistant(ParserAssistantConfig.java:50)
+	at com.lixh.webexample.config.ParserAssistantConfig$$SpringCGLIB$$0.CGLIB$parserAssistant$0(<generated>)
+	at com.lixh.webexample.config.ParserAssistantConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.lixh.webexample.config.ParserAssistantConfig$$SpringCGLIB$$0.parserAssistant(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+	... 85 common frames omitted
+
+2025-03-26 20:39:09.898  INFO 9964 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 8.0.1.Final
+2025-03-26 20:39:09.916  INFO 9964 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Starting WebExampleApplication using Java 17.0.2 with PID 9964 (D:\IDE\LixhProject\WebExample\target\classes started by Admin in D:\IDE\LixhProject\WebExample)
+2025-03-26 20:39:09.917  INFO 9964 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-26 20:39:09.938  INFO 9964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-26 20:39:09.938  INFO 9964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-26 20:39:10.021  INFO 9964 --- [restartedMain] o.s.c.i.support.PropertySourceProcessor  : Properties location [file:.env] not resolvable: .env (系统找不到指定的文件。)
+2025-03-26 20:39:10.469  INFO 9964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 20:39:10.471  INFO 9964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 20:39:10.495  INFO 9964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2025-03-26 20:39:10.562  WARN 9964 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lixh.webexample.mapper]' package. Please check your configuration.
+2025-03-26 20:39:10.998  INFO 9964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2025-03-26 20:39:11.038  INFO 9964 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1100 ms
+2025-03-26 20:39:11.591  WARN 9964 --- [restartedMain] c.b.m.core.injector.methods.Insert       : [com.lixh.webexample.data.mapper.FieldMappingMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2025-03-26 20:39:11.592  WARN 9964 --- [restartedMain] c.b.m.core.injector.methods.Update       : [com.lixh.webexample.data.mapper.FieldMappingMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2025-03-26 20:39:11.648  WARN 9964 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'siliconFlowModelClient' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\adapter\SiliconFlowModelClient.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'orderDecompositionBiz': Unsatisfied dependency expressed through field 'parseTaskService': Error creating bean with name 'parseTaskService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParseTaskService.class]: Unsatisfied dependency expressed through constructor parameter 5: Error creating bean with name 'parserService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'parserAssistant' defined in class path resource [com/lixh/webexample/config/ParserAssistantConfig.class]: Failed to instantiate [com.lixh.webexample.service.ai.ParserAssistant]: Factory method 'parserAssistant' threw exception with message: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+2025-03-26 20:39:11.664  INFO 9964 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-26 20:39:11.672 ERROR 9964 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'siliconFlowModelClient' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\adapter\SiliconFlowModelClient.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'orderDecompositionBiz': Unsatisfied dependency expressed through field 'parseTaskService': Error creating bean with name 'parseTaskService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParseTaskService.class]: Unsatisfied dependency expressed through constructor parameter 5: Error creating bean with name 'parserService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'parserAssistant' defined in class path resource [com/lixh/webexample/config/ParserAssistantConfig.class]: Failed to instantiate [com.lixh.webexample.service.ai.ParserAssistant]: Factory method 'parserAssistant' threw exception with message: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.lixh.webexample.WebExampleApplication.main(WebExampleApplication.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderDecompositionBiz': Unsatisfied dependency expressed through field 'parseTaskService': Error creating bean with name 'parseTaskService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParseTaskService.class]: Unsatisfied dependency expressed through constructor parameter 5: Error creating bean with name 'parserService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'parserAssistant' defined in class path resource [com/lixh/webexample/config/ParserAssistantConfig.class]: Failed to instantiate [com.lixh.webexample.service.ai.ParserAssistant]: Factory method 'parserAssistant' threw exception with message: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1689)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeanMap(DefaultListableBeanFactory.java:1575)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1392)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:907)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:785)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'parseTaskService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParseTaskService.class]: Unsatisfied dependency expressed through constructor parameter 5: Error creating bean with name 'parserService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'parserAssistant' defined in class path resource [com/lixh/webexample/config/ParserAssistantConfig.class]: Failed to instantiate [com.lixh.webexample.service.ai.ParserAssistant]: Factory method 'parserAssistant' threw exception with message: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'parserService' defined in file [D:\IDE\LixhProject\WebExample\target\classes\com\lixh\webexample\service\ParserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'parserAssistant' defined in class path resource [com/lixh/webexample/config/ParserAssistantConfig.class]: Failed to instantiate [com.lixh.webexample.service.ai.ParserAssistant]: Factory method 'parserAssistant' threw exception with message: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:907)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:785)
+	... 56 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'parserAssistant' defined in class path resource [com/lixh/webexample/config/ParserAssistantConfig.class]: Failed to instantiate [com.lixh.webexample.service.ai.ParserAssistant]: Factory method 'parserAssistant' threw exception with message: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:639)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:907)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:785)
+	... 70 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.lixh.webexample.service.ai.ParserAssistant]: Factory method 'parserAssistant' threw exception with message: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:647)
+	... 84 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot invoke "com.lixh.webexample.config.ExternalServiceConfig$SiliconFlowConfig.getModelUrl()" because the return value of "com.lixh.webexample.config.ExternalServiceConfig.getSiliconflow()" is null
+	at com.lixh.webexample.config.ParserAssistantConfig.parserAssistant(ParserAssistantConfig.java:50)
+	at com.lixh.webexample.config.ParserAssistantConfig$$SpringCGLIB$$0.CGLIB$parserAssistant$0(<generated>)
+	at com.lixh.webexample.config.ParserAssistantConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.lixh.webexample.config.ParserAssistantConfig$$SpringCGLIB$$0.parserAssistant(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+	... 85 common frames omitted
+
+2025-03-26 21:42:58.863  INFO 4200 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 8.0.1.Final
+2025-03-26 21:42:58.879  INFO 4200 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Starting WebExampleApplication using Java 17.0.2 with PID 4200 (D:\IDE\LixhProject\WebExample\target\classes started by Admin in D:\IDE\LixhProject\WebExample)
+2025-03-26 21:42:58.879  INFO 4200 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-26 21:42:58.898  INFO 4200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-26 21:42:58.898  INFO 4200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-26 21:42:59.384  INFO 4200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 21:42:59.384  INFO 4200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 21:42:59.407  INFO 4200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2025-03-26 21:42:59.914  INFO 4200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2025-03-26 21:42:59.954  INFO 4200 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1056 ms
+2025-03-26 21:43:00.547  WARN 4200 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3594374c-00e5-41d4-81c2-8a7057f654ed
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-26 21:43:00.869  INFO 4200 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-03-26 21:43:00.920  INFO 4200 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7652c814, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@550f8dc3, org.springframework.security.web.context.SecurityContextHolderFilter@29321376, org.springframework.security.web.header.HeaderWriterFilter@16f59c0c, org.springframework.web.filter.CorsFilter@c54252c, org.springframework.security.web.authentication.logout.LogoutFilter@444a570, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60a01c1f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7042f726, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15401280, org.springframework.security.web.access.ExceptionTranslationFilter@23bc9c8a, org.springframework.security.web.access.intercept.AuthorizationFilter@5dc1f54]
+2025-03-26 21:43:01.356  WARN 4200 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2025-03-26 21:43:01.410  INFO 4200 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-26 21:43:01.449  INFO 4200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9000 (http) with context path ''
+2025-03-26 21:43:01.457  INFO 4200 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Started WebExampleApplication in 2.738 seconds (process running for 3.454)
+2025-03-26 21:43:01.701  INFO 4200 --- [restartedMain] c.l.webexample.config.AdminInitializer   : 管理员用户 [null] 不存在，开始创建...
+2025-03-26 21:43:01.705 ERROR 4200 --- [restartedMain] c.l.webexample.config.AdminInitializer   : 创建管理员用户 [null] 失败: Cannot invoke "String.equals(Object)" because the return value of "com.lixh.webexample.web.dto.RegisterRequest.getPassword()" is null
+
+java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.lixh.webexample.web.dto.RegisterRequest.getPassword()" is null
+	at com.lixh.webexample.service.impl.LoginServiceImpl.register(LoginServiceImpl.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717)
+	at com.lixh.webexample.service.impl.LoginServiceImpl$$SpringCGLIB$$0.register(<generated>)
+	at com.lixh.webexample.config.AdminInitializer.initializeAdminUser(AdminInitializer.java:52)
+	at com.lixh.webexample.config.AdminInitializer.run(AdminInitializer.java:28)
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:790)
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83)
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60)
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789)
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:774)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:341)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.lixh.webexample.WebExampleApplication.main(WebExampleApplication.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+
+2025-03-26 21:43:01.706  INFO 4200 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : WebExample Application started
+2025-03-26 21:43:02.185  INFO 4200 --- [RMI TCP Connection(3)-198.18.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-26 21:43:02.186  INFO 4200 --- [RMI TCP Connection(3)-198.18.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-26 21:44:42.934  INFO 11628 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 8.0.1.Final
+2025-03-26 21:44:42.952  INFO 11628 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Starting WebExampleApplication using Java 17.0.2 with PID 11628 (D:\IDE\LixhProject\WebExample\target\classes started by Admin in D:\IDE\LixhProject\WebExample)
+2025-03-26 21:44:42.953  INFO 11628 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-26 21:44:42.972  INFO 11628 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-26 21:44:42.972  INFO 11628 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-26 21:44:43.455  INFO 11628 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 21:44:43.456  INFO 11628 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 21:44:43.473  INFO 11628 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-03-26 21:44:43.957  INFO 11628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2025-03-26 21:44:43.997  INFO 11628 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1025 ms
+2025-03-26 21:44:44.516  WARN 11628 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 90d0771a-8b96-4a68-8b3d-e7f1f626a1c9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-26 21:44:44.742  INFO 11628 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-03-26 21:44:44.777  INFO 11628 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@503fbefb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@224c561a, org.springframework.security.web.context.SecurityContextHolderFilter@5bb428c, org.springframework.security.web.header.HeaderWriterFilter@3ea48729, org.springframework.web.filter.CorsFilter@4f069fe7, org.springframework.security.web.authentication.logout.LogoutFilter@7de3d08a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12449d0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7616158, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4cf4e7f6, org.springframework.security.web.access.ExceptionTranslationFilter@6db74e63, org.springframework.security.web.access.intercept.AuthorizationFilter@1d9f4e32]
+2025-03-26 21:44:45.128  WARN 11628 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2025-03-26 21:44:45.194  INFO 11628 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-26 21:44:45.252  INFO 11628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9000 (http) with context path ''
+2025-03-26 21:44:45.260  INFO 11628 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Started WebExampleApplication in 2.458 seconds (process running for 2.891)
+2025-03-26 21:44:45.265  INFO 11628 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : WebExample Application started
+2025-03-26 21:44:45.558  INFO 11628 --- [RMI TCP Connection(4)-198.18.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-26 21:44:45.559  INFO 11628 --- [RMI TCP Connection(4)-198.18.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

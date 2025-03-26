@@ -8,7 +8,6 @@ import com.lixh.webexample.data.entity.RolePo;
 import com.lixh.webexample.data.entity.UserRolePo;
 import com.lixh.webexample.data.mapper.RoleMapper;
 import com.lixh.webexample.data.mapper.UserRoleMapper;
-import com.lixh.webexample.ex.BusinessException;
 import com.lixh.webexample.service.RoleService;
 import com.lixh.webexample.web.dto.RoleCreateRequest;
 import com.lixh.webexample.web.dto.RoleUpdateRequest;
@@ -58,7 +57,7 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper, RolePo> implements 
         // 检查角色编码是否已存在
         RolePo existingRole = getRoleByCode(request.getCode());
         if (existingRole != null) {
-            throw new BusinessException("角色编码已存在");
+            throw new RuntimeException("角色编码已存在");
         }
 
         // 创建新角色
@@ -84,12 +83,12 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper, RolePo> implements 
         // 检查角色是否存在
         RolePo role = getById(id);
         if (role == null) {
-            throw new BusinessException("角色不存在");
+            throw new RuntimeException("角色不存在");
         }
 
         // 超级管理员角色不允许修改
         if ("SUPER_ADMIN".equals(role.getCode())) {
-            throw new BusinessException("超级管理员角色不允许修改");
+            throw new RuntimeException("超级管理员角色不允许修改");
         }
 
         // 更新角色信息
@@ -118,12 +117,12 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper, RolePo> implements 
         // 检查角色是否存在
         RolePo role = getById(id);
         if (role == null) {
-            throw new BusinessException("角色不存在");
+            throw new RuntimeException("角色不存在");
         }
 
         // 超级管理员和管理员角色不允许删除
         if ("SUPER_ADMIN".equals(role.getCode()) || "ADMIN".equals(role.getCode())) {
-            throw new BusinessException("系统内置角色不允许删除");
+            throw new RuntimeException("系统内置角色不允许删除");
         }
 
         // 删除角色
