@@ -341,3 +341,221 @@ Action:
 
 Identify and stop the process that's listening on port 1234 or configure this application to listen on another port.
 
+2025-03-26 17:41:09.805  INFO 61246 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 8.0.1.Final
+2025-03-26 17:41:09.821  INFO 61246 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Starting WebExampleApplication using Java 17.0.12 with PID 61246 (/Users/lixionghui/Desktop/MyProject/WebExample/target/classes started by lixionghui in /Users/lixionghui/Desktop/MyProject/WebExample)
+2025-03-26 17:41:09.822  INFO 61246 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-26 17:41:09.838  INFO 61246 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-26 17:41:09.839  INFO 61246 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-26 17:41:10.118  INFO 55690 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-26 17:41:10.240  INFO 61246 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 17:41:10.241  INFO 61246 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 17:41:10.321  INFO 61246 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 0 Redis repository interfaces.
+2025-03-26 17:41:10.695  INFO 61246 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2025-03-26 17:41:10.720  INFO 61246 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 881 ms
+2025-03-26 17:41:11.311  WARN 61246 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3f1ccb67-6efb-44dd-aec6-f4aa776d722e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-26 17:41:11.369  INFO 61246 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-03-26 17:41:11.383  INFO 61246 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6db4ee0a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3fbc5312, org.springframework.security.web.context.SecurityContextHolderFilter@434a315f, org.springframework.security.web.header.HeaderWriterFilter@6ec2826f, org.springframework.web.filter.CorsFilter@4ee1741a, org.springframework.security.web.csrf.CsrfFilter@710a49e9, org.springframework.security.web.authentication.logout.LogoutFilter@18d8dffc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4caddb79, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@577bbb1e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1c636e14, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@40d3a6dc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c4685cd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f6e3b48, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@566d172c, org.springframework.security.web.access.ExceptionTranslationFilter@3718553c, org.springframework.security.web.access.intercept.AuthorizationFilter@1753e369]
+2025-03-26 17:41:11.445  WARN 61246 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2025-03-26 17:41:11.501  WARN 61246 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-03-26 17:41:11.589  WARN 61246 --- [restartedMain] c.b.m.core.injector.methods.Insert       : [com.lixh.webexample.data.mapper.FieldMappingMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2025-03-26 17:41:11.590  WARN 61246 --- [restartedMain] c.b.m.core.injector.methods.Update       : [com.lixh.webexample.data.mapper.FieldMappingMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2025-03-26 17:41:11.689  WARN 61246 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-03-26 17:41:11.703  INFO 61246 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-26 17:41:11.710 ERROR 61246 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9000 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9000 or configure this application to listen on another port.
+
+2025-03-26 17:41:21.132  WARN 55690 --- [Thread-42] org.apache.tomcat.util.net.Acceptor      : The acceptor thread [http-nio-1234-Acceptor] did not stop cleanly
+2025-03-26 17:41:21.233  INFO 55690 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Starting WebExampleApplication using Java 17.0.12 with PID 55690 (/Users/lixionghui/Desktop/MyProject/WebExample/target/classes started by lixionghui in /Users/lixionghui/Desktop/MyProject/WebExample)
+2025-03-26 17:41:21.234  INFO 55690 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-26 17:41:21.331  INFO 55690 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 17:41:21.331  INFO 55690 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 17:41:21.374  INFO 55690 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 0 Redis repository interfaces.
+2025-03-26 17:41:21.418  INFO 55690 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2025-03-26 17:41:21.424  INFO 55690 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 189 ms
+2025-03-26 17:41:21.566  WARN 55690 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1716dafa-7e80-497f-9cb5-5d2ba277aa3c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-26 17:41:21.581  INFO 55690 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-03-26 17:41:21.585  INFO 55690 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5adba324, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6584142b, org.springframework.security.web.context.SecurityContextHolderFilter@7dcbd1ff, org.springframework.security.web.header.HeaderWriterFilter@224403d8, org.springframework.web.filter.CorsFilter@21ebe9a5, org.springframework.security.web.csrf.CsrfFilter@56efb8ef, org.springframework.security.web.authentication.logout.LogoutFilter@6b0933e8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@ec51167, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@f71815c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@43e58d8a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@29956c61, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4ffbe4de, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f072836, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4420d451, org.springframework.security.web.access.ExceptionTranslationFilter@25e88fdd, org.springframework.security.web.access.intercept.AuthorizationFilter@73d8f416]
+2025-03-26 17:41:21.597  WARN 55690 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2025-03-26 17:41:21.611  WARN 55690 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-03-26 17:41:21.621  WARN 55690 --- [restartedMain] c.b.m.core.injector.methods.Insert       : [com.lixh.webexample.data.mapper.FieldMappingMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2025-03-26 17:41:21.622  WARN 55690 --- [restartedMain] c.b.m.core.injector.methods.Update       : [com.lixh.webexample.data.mapper.FieldMappingMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2025-03-26 17:41:21.654  WARN 55690 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-03-26 17:41:21.657  INFO 55690 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-26 17:41:21.659 ERROR 55690 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9000 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9000 or configure this application to listen on another port.
+
+2025-03-26 17:48:09.020  INFO 55690 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Starting WebExampleApplication using Java 17.0.12 with PID 55690 (/Users/lixionghui/Desktop/MyProject/WebExample/target/classes started by lixionghui in /Users/lixionghui/Desktop/MyProject/WebExample)
+2025-03-26 17:48:09.020  INFO 55690 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-26 17:48:09.090  INFO 55690 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 17:48:09.090  INFO 55690 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 17:48:09.121  INFO 55690 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 0 Redis repository interfaces.
+2025-03-26 17:48:09.164  INFO 55690 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2025-03-26 17:48:09.170  INFO 55690 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 149 ms
+2025-03-26 17:48:09.311  WARN 55690 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ddf82a3b-0c0b-49ff-a668-3b217ccca535
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-26 17:48:09.322  INFO 55690 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-03-26 17:48:09.327  INFO 55690 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@21f1240f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2de6418f, org.springframework.security.web.context.SecurityContextHolderFilter@6a736c5a, org.springframework.security.web.header.HeaderWriterFilter@29589bc8, org.springframework.web.filter.CorsFilter@7cfafafe, org.springframework.security.web.csrf.CsrfFilter@7f7b53a3, org.springframework.security.web.authentication.logout.LogoutFilter@3cc7dd83, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7ade4b29, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@315a7fa, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@727a850e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@46c94a54, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@305aba4b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57561eed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a831612, org.springframework.security.web.access.ExceptionTranslationFilter@430e0428, org.springframework.security.web.access.intercept.AuthorizationFilter@e29161c]
+2025-03-26 17:48:09.344  WARN 55690 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2025-03-26 17:48:09.360  WARN 55690 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-03-26 17:48:09.375  WARN 55690 --- [restartedMain] c.b.m.core.injector.methods.Insert       : [com.lixh.webexample.data.mapper.FieldMappingMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2025-03-26 17:48:09.375  WARN 55690 --- [restartedMain] c.b.m.core.injector.methods.Update       : [com.lixh.webexample.data.mapper.FieldMappingMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2025-03-26 17:48:09.408  WARN 55690 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-03-26 17:48:09.416  INFO 55690 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-26 17:48:09.417 ERROR 55690 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9000 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9000 or configure this application to listen on another port.
+
+2025-03-26 17:48:19.563  INFO 55690 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Starting WebExampleApplication using Java 17.0.12 with PID 55690 (/Users/lixionghui/Desktop/MyProject/WebExample/target/classes started by lixionghui in /Users/lixionghui/Desktop/MyProject/WebExample)
+2025-03-26 17:48:19.564  INFO 55690 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-26 17:48:19.660  INFO 55690 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 17:48:19.660  INFO 55690 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 17:48:19.688  INFO 55690 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+2025-03-26 17:48:19.747  INFO 55690 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2025-03-26 17:48:19.753  INFO 55690 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 187 ms
+2025-03-26 17:48:19.902  WARN 55690 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a4f5d08b-24e1-4b24-a215-4f07652c7dca
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-26 17:48:19.909  INFO 55690 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-03-26 17:48:19.913  INFO 55690 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@f7339ad, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64605040, org.springframework.security.web.context.SecurityContextHolderFilter@d1c5ebe, org.springframework.security.web.header.HeaderWriterFilter@7d371eb5, org.springframework.web.filter.CorsFilter@5be6031, org.springframework.security.web.csrf.CsrfFilter@2f278076, org.springframework.security.web.authentication.logout.LogoutFilter@25e8753b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@25ae9b8f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4c3b7b7b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@73a5a128, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2f388813, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e2cfafb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54ddaf5c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@658d50a0, org.springframework.security.web.access.ExceptionTranslationFilter@3a7e3abf, org.springframework.security.web.access.intercept.AuthorizationFilter@1212daa6]
+2025-03-26 17:48:19.925  WARN 55690 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2025-03-26 17:48:19.938  WARN 55690 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-03-26 17:48:19.947  WARN 55690 --- [restartedMain] c.b.m.core.injector.methods.Insert       : [com.lixh.webexample.data.mapper.FieldMappingMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2025-03-26 17:48:19.948  WARN 55690 --- [restartedMain] c.b.m.core.injector.methods.Update       : [com.lixh.webexample.data.mapper.FieldMappingMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2025-03-26 17:48:19.976  WARN 55690 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-03-26 17:48:19.980  INFO 55690 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-26 17:48:19.981 ERROR 55690 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9000 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9000 or configure this application to listen on another port.
+
+2025-03-26 17:49:03.713  INFO 62480 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 8.0.1.Final
+2025-03-26 17:49:03.731  INFO 62480 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Starting WebExampleApplication using Java 17.0.12 with PID 62480 (/Users/lixionghui/Desktop/MyProject/WebExample/target/classes started by lixionghui in /Users/lixionghui/Desktop/MyProject/WebExample)
+2025-03-26 17:49:03.732  INFO 62480 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-26 17:49:03.753  INFO 62480 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-26 17:49:03.753  INFO 62480 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-26 17:49:04.175  INFO 62480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 17:49:04.177  INFO 62480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 17:49:04.257  INFO 62480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 0 Redis repository interfaces.
+2025-03-26 17:49:04.631  INFO 62480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2025-03-26 17:49:04.657  INFO 62480 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 903 ms
+2025-03-26 17:49:05.340  WARN 62480 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 98c5c54a-5ec1-4de7-b070-d58a57293ea7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-26 17:49:05.393  INFO 62480 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-03-26 17:49:05.406  INFO 62480 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7e157d3d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31bad7ec, org.springframework.security.web.context.SecurityContextHolderFilter@410a5817, org.springframework.security.web.header.HeaderWriterFilter@79c3b7cd, org.springframework.web.filter.CorsFilter@3d769381, org.springframework.security.web.csrf.CsrfFilter@4f8adf8, org.springframework.security.web.authentication.logout.LogoutFilter@7e1410f6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1d936e4d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7b60d4e9, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@60c0a5ad, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@42d1a6d4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d5e7b67, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26c38646, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@35e9d01d, org.springframework.security.web.access.ExceptionTranslationFilter@24ae80eb, org.springframework.security.web.access.intercept.AuthorizationFilter@2a36bfd5]
+2025-03-26 17:49:05.473  WARN 62480 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2025-03-26 17:49:05.536  WARN 62480 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-03-26 17:49:05.617  WARN 62480 --- [restartedMain] c.b.m.core.injector.methods.Insert       : [com.lixh.webexample.data.mapper.FieldMappingMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2025-03-26 17:49:05.619  WARN 62480 --- [restartedMain] c.b.m.core.injector.methods.Update       : [com.lixh.webexample.data.mapper.FieldMappingMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2025-03-26 17:49:05.722  WARN 62480 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-03-26 17:49:05.740  INFO 62480 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-26 17:49:05.748 ERROR 62480 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9000 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9000 or configure this application to listen on another port.
+
+2025-03-26 17:50:16.119  INFO 62826 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 8.0.1.Final
+2025-03-26 17:50:16.138  INFO 62826 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Starting WebExampleApplication using Java 17.0.12 with PID 62826 (/Users/lixionghui/Desktop/MyProject/WebExample/target/classes started by lixionghui in /Users/lixionghui/Desktop/MyProject/WebExample)
+2025-03-26 17:50:16.138  INFO 62826 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-26 17:50:16.160  INFO 62826 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-26 17:50:16.160  INFO 62826 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-26 17:50:16.566  INFO 62826 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 17:50:16.567  INFO 62826 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 17:50:16.634  INFO 62826 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 0 Redis repository interfaces.
+2025-03-26 17:50:16.997  INFO 62826 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2025-03-26 17:50:17.021  INFO 62826 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 860 ms
+2025-03-26 17:50:17.584  WARN 62826 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0c026276-6c07-4bbc-b6f0-fd40b6e90f2d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-26 17:50:17.637  INFO 62826 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-03-26 17:50:17.651  INFO 62826 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@10715397, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e23a613, org.springframework.security.web.context.SecurityContextHolderFilter@62c3c077, org.springframework.security.web.header.HeaderWriterFilter@7951d89d, org.springframework.web.filter.CorsFilter@69477989, org.springframework.security.web.csrf.CsrfFilter@dc83028, org.springframework.security.web.authentication.logout.LogoutFilter@4721551, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@208ce8b1, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@54b34d9d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@58fcff1c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@11916fb4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@99fa282, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1633e88b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@420be27f, org.springframework.security.web.access.ExceptionTranslationFilter@420fe36b, org.springframework.security.web.access.intercept.AuthorizationFilter@d8ccea9]
+2025-03-26 17:50:17.719  WARN 62826 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2025-03-26 17:50:17.777  INFO 62826 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-26 17:50:17.855  WARN 62826 --- [restartedMain] c.b.m.core.injector.methods.Insert       : [com.lixh.webexample.data.mapper.FieldMappingMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2025-03-26 17:50:17.856  WARN 62826 --- [restartedMain] c.b.m.core.injector.methods.Update       : [com.lixh.webexample.data.mapper.FieldMappingMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2025-03-26 17:50:17.956  INFO 62826 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9000 (http) with context path ''
+2025-03-26 17:50:17.968  INFO 62826 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : Started WebExampleApplication in 1.98 seconds (process running for 2.3)
+2025-03-26 17:50:17.985  INFO 62826 --- [restartedMain] c.lixh.webexample.WebExampleApplication  : WebExample Application started
