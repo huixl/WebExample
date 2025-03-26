@@ -3,10 +3,10 @@ package com.lixh.webexample.biz;
 import java.io.ByteArrayOutputStream;
 import java.time.LocalDateTime;
 import java.util.*;
-import java.util.concurrent.CompletableFuture;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+import com.lixh.webexample.constant.ParseStatusEnum;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -20,7 +20,6 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.lixh.webexample.config.UserContext;
-import com.lixh.webexample.constant.ParseStatus;
 import com.lixh.webexample.converter.OrderDecompositionConverter;
 import com.lixh.webexample.data.entity.*;
 import com.lixh.webexample.data.enums.FieldType;
@@ -203,7 +202,7 @@ public class OrderDecompositionBiz {
         }
 
         // 如果解析状态为"解析中"，不允许查看详情
-        if (parseHistory.getParseStatus() == ParseStatus.PARSING) {
+        if (parseHistory.getParseStatusEnum() == ParseStatusEnum.PARSING) {
             throw new RuntimeException("解析任务尚未完成，无法查看详情");
         }
 
@@ -260,7 +259,7 @@ public class OrderDecompositionBiz {
         }
 
         // 如果解析状态为"解析中"，不允许查看详情
-        if (parseHistory.getParseStatus() == ParseStatus.PARSING) {
+        if (parseHistory.getParseStatusEnum() == ParseStatusEnum.PARSING) {
             throw new RuntimeException("解析任务尚未完成，无法查看详情");
         }
 
@@ -320,7 +319,7 @@ public class OrderDecompositionBiz {
         parseHistory.setCustomName(request.getCustomName());
 
         // 设置解析状态为"解析中"，不再根据additionalPrompt判断
-        parseHistory.setParseStatus(ParseStatus.PARSING);
+        parseHistory.setParseStatusEnum(ParseStatusEnum.PARSING);
 
         parseHistory.setCreateBy(userName);
         parseHistory.setUpdateBy(userName);
@@ -394,21 +393,21 @@ public class OrderDecompositionBiz {
         }
 
         // 如果解析状态不是"解析成功"，返回错误信息
-        if (parseHistory.getParseStatus() != ParseStatus.SUCCESS) {
+        if (parseHistory.getParseStatusEnum() != ParseStatusEnum.SUCCESS) {
             ParseResultResponse response = new ParseResultResponse();
             response.setId(parseHistory.getId());
             response.setMaterialType(parseHistory.getMaterialType());
-            response.setParseStatus(parseHistory.getParseStatus());
+            response.setParseStatusEnum(parseHistory.getParseStatusEnum());
             response.setCreateTime(parseHistory.getCreateTime());
             response.setUpdateTime(parseHistory.getUpdateTime());
 
             // 根据不同的解析状态设置不同的错误信息
             String errorMessage = "";
-            if (parseHistory.getParseStatus() == ParseStatus.PARSING) {
+            if (parseHistory.getParseStatusEnum() == ParseStatusEnum.PARSING) {
                 errorMessage = "解析任务正在进行中，请稍后查看结果";
-            } else if (parseHistory.getParseStatus() == ParseStatus.FAILED) {
+            } else if (parseHistory.getParseStatusEnum() == ParseStatusEnum.FAILED) {
                 errorMessage = parseHistory.getErrorMessage();
-            } else if (parseHistory.getParseStatus() == ParseStatus.WAITING_FOR_INPUT) {
+            } else if (parseHistory.getParseStatusEnum() == ParseStatusEnum.WAITING_FOR_INPUT) {
                 errorMessage = "解析任务需要用户输入，请确认解析结果";
             }
 
@@ -473,14 +472,14 @@ public class OrderDecompositionBiz {
         }
 
         // 检查解析历史的状态是否为"解析成功"或"等待用户输入"
-        if (parseHistory.getParseStatus() != ParseStatus.SUCCESS
-                && parseHistory.getParseStatus() != ParseStatus.WAITING_FOR_CALCULATION_CONFIRM
-                && parseHistory.getParseStatus() != ParseStatus.WAITING_FOR_INPUT) {
+        if (parseHistory.getParseStatusEnum() != ParseStatusEnum.SUCCESS
+                && parseHistory.getParseStatusEnum() != ParseStatusEnum.WAITING_FOR_CALCULATION_CONFIRM
+                && parseHistory.getParseStatusEnum() != ParseStatusEnum.WAITING_FOR_INPUT) {
             throw new BusinessException("只有解析成功或等待用户输入的任务才能确认结果");
         }
 
         // 检查解析历史的状态是否为"解析成功"，如果是则阻止任何更改
-        if (parseHistory.getParseStatus() == ParseStatus.SUCCESS) {
+        if (parseHistory.getParseStatusEnum() == ParseStatusEnum.SUCCESS) {
             throw new BusinessException("解析任务已完成，不能再进行修改");
         }
 
@@ -806,9 +805,9 @@ public class OrderDecompositionBiz {
         }
 
         // 检查解析历史的状态
-        if (parseHistory.getParseStatus() == ParseStatus.SUCCESS) {
+        if (parseHistory.getParseStatusEnum() == ParseStatusEnum.SUCCESS) {
             throw new BusinessException("解析任务已完成，不能再进行修改");
-        } else if (parseHistory.getParseStatus() != ParseStatus.WAITING_FOR_INPUT) {
+        } else if (parseHistory.getParseStatusEnum() != ParseStatusEnum.WAITING_FOR_INPUT) {
             throw new BusinessException("只有等待用户输入的任务才能完成解析");
         }
 
@@ -838,7 +837,7 @@ public class OrderDecompositionBiz {
         parseDetailService.batchUpdateStatus(id, ParseDetailStatus.SUCCESS, userName);
 
         // 更新解析历史状态为CALCULATING
-        parseHistory.setParseStatus(ParseStatus.CALCULATING);
+        parseHistory.setParseStatusEnum(ParseStatusEnum.CALCULATING);
         parseHistory.setUpdateBy(userName);
         parseHistory.setUpdateTime(LocalDateTime.now());
         parseHistoryService.updateParseHistory(parseHistory);
@@ -859,7 +858,7 @@ public class OrderDecompositionBiz {
 
         dataDTO.setId(parseHistory.getId());
         dataDTO.setMaterialType(parseHistory.getMaterialType());
-        dataDTO.setParseStatus(parseHistory.getParseStatus());
+        dataDTO.setParseStatusEnum(parseHistory.getParseStatusEnum());
         dataDTO.setCreateTime(parseHistory.getCreateTime());
         dataDTO.setUpdateTime(parseHistory.getUpdateTime());
         dataDTO.setConfirmTime(parseHistory.getConfirmTime());
@@ -886,7 +885,7 @@ public class OrderDecompositionBiz {
         }
 
         // 检查解析历史的状态
-        if (parseHistory.getParseStatus() == ParseStatus.SUCCESS) {
+        if (parseHistory.getParseStatusEnum() == ParseStatusEnum.SUCCESS) {
             return BaseResponse.error("解析任务已完成，不能再进行修改");
         }
 
@@ -921,7 +920,7 @@ public class OrderDecompositionBiz {
         }
 
         // 检查解析历史的状态
-        if (parseHistory.getParseStatus() == ParseStatus.SUCCESS) {
+        if (parseHistory.getParseStatusEnum() == ParseStatusEnum.SUCCESS) {
             return BaseResponse.error("解析任务已完成，不能再进行修改");
         }
 
@@ -1030,7 +1029,7 @@ public class OrderDecompositionBiz {
         }
 
         // 检查解析历史状态
-        if (parseHistory.getParseStatus() == ParseStatus.SUCCESS) {
+        if (parseHistory.getParseStatusEnum() == ParseStatusEnum.SUCCESS) {
             throw new BusinessException("解析已完成，无法修改");
         }
 
@@ -1082,7 +1081,7 @@ public class OrderDecompositionBiz {
         userInputService.addUserInput(userInputPo);
 
         // 3. 更新解析状态为"解析中"
-        updateParseStatus(parseHistoryId, ParseStatus.PARSING, null);
+        updateParseStatus(parseHistoryId, ParseStatusEnum.PARSING, null);
 
         // 4. 启动异步任务
         startAiInferenceTask(parseHistoryId);
@@ -1109,7 +1108,7 @@ public class OrderDecompositionBiz {
                 Thread.currentThread().interrupt(); // 恢复中断状态
                 log.error("启动AI推断任务时被中断", e);
                 // 更新解析状态为"失败"
-                updateParseStatus(parseHistoryId, ParseStatus.FAILED, "启动AI推断任务时被中断");
+                updateParseStatus(parseHistoryId, ParseStatusEnum.FAILED, "启动AI推断任务时被中断");
             }
         });
     }
@@ -1149,7 +1148,7 @@ public class OrderDecompositionBiz {
             // 如果没有AI推断字段，直接返回
             if (aiInferenceFields.isEmpty()) {
                 log.info("没有需要AI推断的字段，历史ID: {}", parseHistoryId);
-                updateParseStatus(parseHistoryId, ParseStatus.SUCCESS, null);
+                updateParseStatus(parseHistoryId, ParseStatusEnum.SUCCESS, null);
                 return;
             }
 
@@ -1188,17 +1187,17 @@ public class OrderDecompositionBiz {
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
                 log.error("AI推断任务被中断，历史ID: {}", parseHistoryId, e);
-                updateParseStatus(parseHistoryId, ParseStatus.FAILED, "AI推断任务被中断");
+                updateParseStatus(parseHistoryId, ParseStatusEnum.FAILED, "AI推断任务被中断");
                 return;
             }
 
             // 7. 更新解析状态为"等待用户输入"
-            updateParseStatus(parseHistoryId, ParseStatus.WAITING_FOR_INPUT, null);
+            updateParseStatus(parseHistoryId, ParseStatusEnum.WAITING_FOR_INPUT, null);
             log.info("AI推断任务已完成，等待用户确认，历史ID: {}", parseHistoryId);
         } catch (Exception e) {
             log.error("处理AI推断任务出错，历史ID: {}", parseHistoryId, e);
             // 更新解析状态为"失败"
-            updateParseStatus(parseHistoryId, ParseStatus.FAILED, e.getMessage());
+            updateParseStatus(parseHistoryId, ParseStatusEnum.FAILED, e.getMessage());
         }
     }
 
@@ -1300,11 +1299,11 @@ public class OrderDecompositionBiz {
      * @param status         解析状态
      * @param errorMessage   错误信息
      */
-    private void updateParseStatus(Long parseHistoryId, ParseStatus status, String errorMessage) {
+    private void updateParseStatus(Long parseHistoryId, ParseStatusEnum status, String errorMessage) {
         try {
             ParseHistoryPo parseHistory = new ParseHistoryPo();
             parseHistory.setId(parseHistoryId);
-            parseHistory.setParseStatus(status);
+            parseHistory.setParseStatusEnum(status);
             parseHistory.setErrorMessage(errorMessage);
             parseHistory.setUpdateTime(LocalDateTime.now());
 
@@ -1792,7 +1791,7 @@ public class OrderDecompositionBiz {
         }
 
         // 检查解析历史的状态
-        if (parseHistory.getParseStatus() != ParseStatus.WAITING_FOR_CALCULATION_CONFIRM) {
+        if (parseHistory.getParseStatusEnum() != ParseStatusEnum.WAITING_FOR_CALCULATION_CONFIRM) {
             return BaseResponse.error("只有等待确认计算结果的任务才能确认");
         }
 
@@ -1807,7 +1806,7 @@ public class OrderDecompositionBiz {
             }
             
             // 更新解析历史状态为SUCCESS
-            parseHistory.setParseStatus(ParseStatus.SUCCESS);
+            parseHistory.setParseStatusEnum(ParseStatusEnum.SUCCESS);
             parseHistory.setConfirmTime(LocalDateTime.now());
             parseHistory.setConfirmedBy(userName);
             parseHistory.setUpdateBy(userName);

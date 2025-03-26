@@ -55,7 +55,7 @@ public class ParseHistoryServiceImpl extends ServiceImpl<ParseHistoryMapper, Par
                     queryWrapper.orderBy(true, isAsc, ParseHistoryPo::getUpdateTime);
                     break;
                 case "parseStatus":
-                    queryWrapper.orderBy(true, isAsc, ParseHistoryPo::getParseStatus);
+                    queryWrapper.orderBy(true, isAsc, ParseHistoryPo::getParseStatusEnum);
                     break;
                 default:
                     // 默认按ID降序排序

@@ -1,6 +1,6 @@
 package com.lixh.webexample.web.dto;
 
-import com.lixh.webexample.constant.ParseStatus;
+import com.lixh.webexample.constant.ParseStatusEnum;
 import lombok.Data;
 
 import java.util.List;
@@ -25,7 +25,7 @@ public class MaterialParseResponse {
     /**
      * 解析状态
      */
-    private ParseStatus parseStatus;
+    private ParseStatusEnum parseStatusEnum;
 
     /**
      * 错误信息

@@ -3,7 +3,7 @@ package com.lixh.webexample.service.impl;
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.lixh.webexample.constant.ParseStatus;
+import com.lixh.webexample.constant.ParseStatusEnum;
 import com.lixh.webexample.data.entity.CalculationMappingPo;
 import com.lixh.webexample.data.entity.FieldConfigPo;
 import com.lixh.webexample.data.entity.ParseDetailPo;
@@ -194,7 +194,7 @@ public class CalculationMappingServiceImpl extends ServiceImpl<CalculationMappin
         }
         
         // 2. 更新解析历史状态为计算中
-        historyPo.setParseStatus(ParseStatus.CALCULATING);
+        historyPo.setParseStatusEnum(ParseStatusEnum.CALCULATING);
         parseHistoryMapper.updateById(historyPo);
         
         try {
@@ -205,7 +205,7 @@ public class CalculationMappingServiceImpl extends ServiceImpl<CalculationMappin
             
             if (calculatedFields.isEmpty()) {
                 // 如果没有计算列，直接更新状态为等待确认
-                historyPo.setParseStatus(ParseStatus.WAITING_FOR_CALCULATION_CONFIRM);
+                historyPo.setParseStatusEnum(ParseStatusEnum.WAITING_FOR_CALCULATION_CONFIRM);
                 parseHistoryMapper.updateById(historyPo);
                 return true;
             }
@@ -231,14 +231,14 @@ public class CalculationMappingServiceImpl extends ServiceImpl<CalculationMappin
             }
             
             // 7. 更新解析历史状态为等待确认
-            historyPo.setParseStatus(ParseStatus.WAITING_FOR_CALCULATION_CONFIRM);
+            historyPo.setParseStatusEnum(ParseStatusEnum.WAITING_FOR_CALCULATION_CONFIRM);
             parseHistoryMapper.updateById(historyPo);
             
             return true;
         } catch (Exception e) {
             log.error("计算过程发生错误", e);
             // 发生异常时，更新状态为失败
-            historyPo.setParseStatus(ParseStatus.FAILED);
+            historyPo.setParseStatusEnum(ParseStatusEnum.FAILED);
             historyPo.setErrorMessage("计算过程发生错误: " + e.getMessage());
             parseHistoryMapper.updateById(historyPo);
             

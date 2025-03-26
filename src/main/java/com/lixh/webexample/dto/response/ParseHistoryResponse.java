@@ -1,6 +1,6 @@
 package com.lixh.webexample.dto.response;
 
-import com.lixh.webexample.constant.ParseStatus;
+import com.lixh.webexample.constant.ParseStatusEnum;
 import com.lixh.webexample.data.enums.ParseDetailStatus;
 import lombok.Data;
 
@@ -17,7 +17,7 @@ public class ParseHistoryResponse {
 
     private String materialType;
 
-    private ParseStatus parseStatus;
+    private ParseStatusEnum parseStatusEnum;
 
     private String errorMessage;
 

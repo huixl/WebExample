@@ -1,6 +1,6 @@
 package com.lixh.webexample.dto;
 
-import com.lixh.webexample.constant.ParseStatus;
+import com.lixh.webexample.constant.ParseStatusEnum;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -25,7 +25,7 @@ public class MaterialParseMetadataDTO {
     /**
      * 解析状态
      */
-    private ParseStatus parseStatus;
+    private ParseStatusEnum parseStatusEnum;
 
     /**
      * 错误信息

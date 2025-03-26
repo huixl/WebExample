@@ -2,7 +2,7 @@ package com.lixh.webexample.service.impl;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.lixh.webexample.constant.ParseStatus;
+import com.lixh.webexample.constant.ParseStatusEnum;
 import com.lixh.webexample.data.entity.ParseDetailPo;
 import com.lixh.webexample.data.entity.ParseHistoryPo;
 import com.lixh.webexample.data.enums.ParseDetailStatus;
@@ -145,7 +145,7 @@ public class ParseDetailServiceImpl extends ServiceImpl<ParseDetailMapper, Parse
 
         // 查询解析历史状态
         ParseHistoryPo parseHistory = parseHistoryMapper.selectById(parseHistoryId);
-        if (parseHistory != null && ParseStatus.SUCCESS.equals(parseHistory.getParseStatus())) {
+        if (parseHistory != null && ParseStatusEnum.SUCCESS.equals(parseHistory.getParseStatusEnum())) {
             throw new BusinessException("解析任务已完成，不能再进行修改");
         }
 
@@ -196,7 +196,7 @@ public class ParseDetailServiceImpl extends ServiceImpl<ParseDetailMapper, Parse
     public int batchUpdateStatus(Long parseHistoryId, ParseDetailStatus status, String updateBy) {
         // 查询解析历史状态
         ParseHistoryPo parseHistory = parseHistoryMapper.selectById(parseHistoryId);
-        if (parseHistory != null && ParseStatus.SUCCESS.equals(parseHistory.getParseStatus())) {
+        if (parseHistory != null && ParseStatusEnum.SUCCESS.equals(parseHistory.getParseStatusEnum())) {
             throw new BusinessException("解析任务已完成，不能再进行修改");
         }
 

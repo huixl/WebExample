@@ -1,7 +1,7 @@
 package com.lixh.webexample.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.lixh.webexample.constant.ParseStatus;
+import com.lixh.webexample.constant.ParseStatusEnum;
 import com.lixh.webexample.data.entity.MaterialParseMetadataPo;
 import com.lixh.webexample.data.entity.MaterialParseResultPo;
 import com.lixh.webexample.data.mapper.MaterialParseMetadataMapper;
@@ -81,7 +81,7 @@ public class MaterialParseServiceImpl implements MaterialParseService {
             List<Map<String, Object>> parseResult = parseExcel(path.toFile(), request);
 
             // 设置解析状态
-            metadataEntity.setParseStatus(ParseStatus.SUCCESS); // 解析成功
+            metadataEntity.setParseStatusEnum(ParseStatusEnum.SUCCESS); // 解析成功
 
             // 保存元数据到数据库
             metadataMapper.insert(metadataEntity);
@@ -92,7 +92,7 @@ public class MaterialParseServiceImpl implements MaterialParseService {
             // 设置响应
             response.setId(metadataEntity.getId());
             response.setFileName(fileName);
-            response.setParseStatus(ParseStatus.SUCCESS);
+            response.setParseStatusEnum(ParseStatusEnum.SUCCESS);
             response.setParseResult(parseResult);
             response.setFieldMapping(request.getFieldMapping());
 
@@ -100,7 +100,7 @@ public class MaterialParseServiceImpl implements MaterialParseService {
             log.error("解析Excel失败", e);
 
             // 设置错误信息
-            metadataEntity.setParseStatus(ParseStatus.FAILED); // 解析失败
+            metadataEntity.setParseStatusEnum(ParseStatusEnum.FAILED); // 解析失败
             metadataEntity.setErrorMessage(e.getMessage());
 
             // 保存到数据库
@@ -109,7 +109,7 @@ public class MaterialParseServiceImpl implements MaterialParseService {
             // 设置响应
             response.setId(metadataEntity.getId());
             response.setFileName(metadataEntity.getFileName());
-            response.setParseStatus(ParseStatus.FAILED);
+            response.setParseStatusEnum(ParseStatusEnum.FAILED);
             response.setErrorMessage(e.getMessage());
         }
 
@@ -126,7 +126,7 @@ public class MaterialParseServiceImpl implements MaterialParseService {
         MaterialParseResponse response = new MaterialParseResponse();
         response.setId(metadataEntity.getId());
         response.setFileName(metadataEntity.getFileName());
-        response.setParseStatus(metadataEntity.getParseStatus());
+        response.setParseStatusEnum(metadataEntity.getParseStatusEnum());
         response.setErrorMessage(metadataEntity.getErrorMessage());
         response.setFieldMapping(metadataEntity.getFieldMapping());
 

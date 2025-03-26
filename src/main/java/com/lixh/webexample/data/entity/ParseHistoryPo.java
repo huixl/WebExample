@@ -1,7 +1,7 @@
 package com.lixh.webexample.data.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
-import com.lixh.webexample.constant.ParseStatus;
+import com.lixh.webexample.constant.ParseStatusEnum;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -35,7 +35,7 @@ public class ParseHistoryPo {
      * 解析状态（PARSING-解析中，SUCCESS-解析成功，FAILED-解析失败，WAITING_FOR_INPUT-等待用户输入）
      */
     @TableField("parse_status")
-    private ParseStatus parseStatus;
+    private ParseStatusEnum parseStatusEnum;
 
     /**
      * 错误信息

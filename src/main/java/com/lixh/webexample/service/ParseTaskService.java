@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
-import com.lixh.webexample.constant.ParseStatus;
+import com.lixh.webexample.constant.ParseStatusEnum;
 import com.lixh.webexample.data.entity.*;
 import com.lixh.webexample.data.enums.ParseDetailStatus;
 import com.lixh.webexample.util.ConcurrencyUtil;
@@ -166,21 +166,21 @@ public class ParseTaskService {
             }
 
             // 7. 根据解析状态更新 ParseStatus
-            ParseStatus parseStatus = parseUsingAI(parseHistoryId);
-            updateParseStatus(parseHistoryId, parseStatus, null);
+            ParseStatusEnum parseStatusEnum = parseUsingAI(parseHistoryId);
+            updateParseStatus(parseHistoryId, parseStatusEnum, null);
 
         } catch (IllegalStateException e) {
             log.error("解析任务验证错误，历史ID {}: {}", parseHistoryId, e.getMessage());
-            updateParseStatus(parseHistoryId, ParseStatus.FAILED, e.getMessage());
+            updateParseStatus(parseHistoryId, ParseStatusEnum.FAILED, e.getMessage());
 
         } catch (Exception e) {
             log.error("处理解析任务出错，历史ID: {}", parseHistoryId, e);
-            updateParseStatus(parseHistoryId, ParseStatus.FAILED, e.getMessage());
+            updateParseStatus(parseHistoryId, ParseStatusEnum.FAILED, e.getMessage());
 
         }
     }
 
-    private ParseStatus parseUsingAI(Long parseHistoryId) {
+    private ParseStatusEnum parseUsingAI(Long parseHistoryId) {
         try {
             // 1. 获取解析详情以获取所有行号
             List<ParseDetailPo> parseDetails = parseDetailService.getParseDetails(parseHistoryId);
@@ -210,12 +210,12 @@ public class ParseTaskService {
             );
 
             // 返回等待用户输入状态
-            return ParseStatus.WAITING_FOR_INPUT;
+            return ParseStatusEnum.WAITING_FOR_INPUT;
         } catch (Exception e) {
             log.error("AI解析出错: {}", e.getMessage(), e);
             // 更新解析状态为失败
-            updateParseStatus(parseHistoryId, ParseStatus.FAILED, e.getMessage());
-            return ParseStatus.FAILED;
+            updateParseStatus(parseHistoryId, ParseStatusEnum.FAILED, e.getMessage());
+            return ParseStatusEnum.FAILED;
         }
     }
 
@@ -226,11 +226,11 @@ public class ParseTaskService {
      * @param status         状态
      * @param errorMessage   错误信息
      */
-    private void updateParseStatus(Long parseHistoryId, ParseStatus status, String errorMessage) {
+    private void updateParseStatus(Long parseHistoryId, ParseStatusEnum status, String errorMessage) {
         try {
             ParseHistoryPo parseHistory = new ParseHistoryPo();
             parseHistory.setId(parseHistoryId);
-            parseHistory.setParseStatus(status);
+            parseHistory.setParseStatusEnum(status);
             parseHistory.setErrorMessage(errorMessage);
             parseHistory.setUpdateTime(LocalDateTime.now());
 

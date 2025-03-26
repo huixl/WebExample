@@ -1,6 +1,6 @@
 package com.lixh.webexample.dto.response;
 
-import com.lixh.webexample.constant.ParseStatus;
+import com.lixh.webexample.constant.ParseStatusEnum;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -16,7 +16,7 @@ public class ParseResultResponse {
 
     private String materialType;
 
-    private ParseStatus parseStatus;
+    private ParseStatusEnum parseStatusEnum;
 
     private LocalDateTime createTime;
 

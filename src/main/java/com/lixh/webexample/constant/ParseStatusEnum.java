@@ -3,7 +3,7 @@ package com.lixh.webexample.constant;
 /**
  * 解析状态枚举
  */
-public enum ParseStatus {
+public enum ParseStatusEnum {
     /**
      * 解析中
      */
@@ -40,13 +40,13 @@ public enum ParseStatus {
      * @param value 字符串值
      * @return 枚举值
      */
-    public static ParseStatus fromValue(String value) {
+    public static ParseStatusEnum fromValue(String value) {
         if (value == null) {
             return null;
         }
 
         try {
-            return ParseStatus.valueOf(value);
+            return ParseStatusEnum.valueOf(value);
         } catch (IllegalArgumentException e) {
             throw new IllegalArgumentException("Unknown ParseStatus value: " + value);
         }
