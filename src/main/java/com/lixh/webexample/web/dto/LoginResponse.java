@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 /**
  * 登录响应DTO
+ * @author lixionghui
  */
 @Data
 @Builder
@@ -15,22 +16,34 @@ import lombok.NoArgsConstructor;
 public class LoginResponse {
 
     /**
+     * 用户ID
+     */
+    private Long userId;
+
+    /**
      * 用户名
      */
     private String username;
 
     /**
-     * 用户头像
+     * 昵称
      */
-    private String avatar;
+    private String nickname;
 
     /**
-     * 认证令牌
+     * 头像URL
+     */
+    private String avatarUrl;
+
+    /**
+     * 访问令牌
      */
     private String token;
 
     /**
-     * 过期时间（毫秒时间戳）
+     * 过期时间（秒）
      */
-    private Long expireTime;
+    private Integer expireTime;
+
+
 }

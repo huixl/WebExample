@@ -5,21 +5,28 @@ import lombok.Data;
 
 /**
  * 登录请求DTO
+ * @author lixionghui
  */
 @Data
 public class LoginRequest {
 
     /**
-     * 用户名
+     * 登陆标识
      */
-    @NotBlank(message = "用户名不能为空")
-    private String username;
+    @NotBlank(message = "账号不能为空")
+    private String identity;
 
     /**
-     * 密码
+     * 登陆凭证
      */
     @NotBlank(message = "密码不能为空")
-    private String password;
+    private String credential;
+
+    /**
+     * 登陆方式
+     */
+    @NotBlank(message = "登陆方式不能为空")
+    private String loginType;
 
     /**
      * 记住我

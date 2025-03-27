@@ -1,9 +1,9 @@
 package com.lixh.webexample.service;
 
+import java.util.List;
+
 import com.lixh.webexample.data.entity.UserPo;
 import com.lixh.webexample.web.dto.*;
-
-import java.util.List;
 
 /**
  * 用户服务接口
@@ -21,10 +21,10 @@ public interface LoginService {
     /**
      * 用户登录
      *
-     * @param loginRequest 登录请求
-     * @return 登录响应，包含用户信息和token
+     * @param request 登录请求
+     * @return 登录响应
      */
-    LoginResponse login(LoginRequest loginRequest);
+    LoginResponse login(LoginRequest request);
 
     /**
      * 根据用户名查询用户

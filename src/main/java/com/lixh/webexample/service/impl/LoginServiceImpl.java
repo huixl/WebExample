@@ -1,31 +1,35 @@
 package com.lixh.webexample.service.impl;
 
+import java.util.List;
+import java.util.Objects;
+
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.StringUtils;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
+
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.lixh.webexample.data.entity.UserPo;
 import com.lixh.webexample.data.mapper.UserMapper;
+import com.lixh.webexample.exception.BusinessException;
 import com.lixh.webexample.service.LoginHistoryService;
 import com.lixh.webexample.service.LoginService;
 import com.lixh.webexample.service.TokenService;
+import com.lixh.webexample.strategy.LoginStrategyFactory;
 import com.lixh.webexample.web.dto.*;
+
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
-
-import java.time.LocalDateTime;
-import java.util.List;
-import java.util.Objects;
-import java.util.UUID;
 
 /**
- * 用户服务实现类
+ * 登录服务实现类
+ * @author lixionghui
  */
 @Slf4j
 @Service
@@ -49,152 +53,32 @@ public class LoginServiceImpl implements LoginService {
 
     private final LoginHistoryService loginHistoryService;
 
+    private final LoginStrategyFactory loginStrategyFactory;
+
     @Override
     @Transactional
-    public RegisterResponse register(RegisterRequest registerRequest) {
-        // 验证两次密码是否一致
-        if (!registerRequest.getPassword().equals(registerRequest.getConfirmPassword())) {
-            throw new RuntimeException("两次输入的密码不一致");
+    public RegisterResponse register(RegisterRequest request) {
+
+        // 1. 验证登录方式不能为空
+        if (!StringUtils.hasText(request.getLoginType())) {
+            throw new BusinessException("登录方式不能为空");
         }
 
-        // 检查用户名是否已存在
-        UserPo existingUser = findByUsername(registerRequest.getUsername());
-        if (existingUser != null) {
-            throw new RuntimeException("用户名已存在");
-        }
+        // 2. 获取对应的登录策略并处理
+        return loginStrategyFactory.getStrategy(request.getLoginType()).processRegister(request);
 
-        // 检查邮箱是否已存在
-        LambdaQueryWrapper<UserPo> queryWrapper = new LambdaQueryWrapper<>();
-        queryWrapper.eq(UserPo::getEmail, registerRequest.getEmail());
-        existingUser = userMapper.selectOne(queryWrapper);
-        if (existingUser != null) {
-            throw new RuntimeException("邮箱已被注册");
-        }
-
-        // 创建新用户
-        UserPo newUser = new UserPo();
-        newUser.setUsername(registerRequest.getUsername());
-        newUser.setEmail(registerRequest.getEmail());
-
-        // 生成随机盐值
-        String salt = UUID.randomUUID().toString().replace("-", "");
-        newUser.setSalt(salt);
-
-        // 加密密码
-        String encodedPassword = passwordEncoder.encode(registerRequest.getPassword());
-        newUser.setPassword(encodedPassword);
-
-        // 设置默认头像
-        newUser.setAvatar("https://joesch.moe/api/v1/random");
-
-        // 设置账号状态为启用
-        newUser.setStatus(1);
-
-        // 设置默认值
-        newUser.setCreateBy(registerRequest.getUsername());
-        newUser.setUpdateBy(registerRequest.getUsername());
-
-        // 保存用户
-        userMapper.insert(newUser);
-
-        log.info("用户注册成功: {}", newUser.getUsername());
-
-        return RegisterResponse.builder()
-                .success(true)
-                .message("注册成功")
-                .build();
     }
 
     @Override
-    public LoginResponse login(LoginRequest loginRequest) {
-        String username = loginRequest.getUsername();
-        String password = loginRequest.getPassword();
-        boolean rememberMe = loginRequest.getRememberMe() != null && loginRequest.getRememberMe();
+    public LoginResponse login(LoginRequest request) {
 
-        // 查询用户
-        UserPo user = findByUsername(username);
-        if (user == null) {
-            // 记录登录失败历史
-            try {
-                loginHistoryService.recordLoginHistory(
-                        null, // 用户不存在，无用户ID
-                        getClientIp(),
-                        Objects.requireNonNull(getRequest()).getHeader("User-Agent"),
-                        0, // 登录失败
-                        "PASSWORD",
-                        "用户名不存在");
-            } catch (Exception e) {
-                log.error("记录登录失败历史失败", e);
-            }
-            throw new RuntimeException("用户名或密码错误");
+        // 1. 验证登录方式不能为空
+        if (!StringUtils.hasText(request.getLoginType())) {
+            throw new BusinessException("登录方式不能为空");
         }
 
-        // 验证密码
-        if (!passwordEncoder.matches(password, user.getPassword())) {
-            // 记录登录失败历史
-            try {
-                loginHistoryService.recordLoginHistory(
-                        user.getId(),
-                        getClientIp(),
-                        Objects.requireNonNull(getRequest()).getHeader("User-Agent"),
-                        0, // 登录失败
-                        "PASSWORD",
-                        "密码错误");
-            } catch (Exception e) {
-                log.error("记录登录失败历史失败", e);
-            }
-            throw new RuntimeException("用户名或密码错误");
-        }
-
-        // 验证用户状态
-        if (user.getStatus() == null || user.getStatus() != 1) {
-            // 记录登录失败历史
-            try {
-                loginHistoryService.recordLoginHistory(
-                        user.getId(),
-                        getClientIp(),
-                        Objects.requireNonNull(getRequest()).getHeader("User-Agent"),
-                        0, // 登录失败
-                        "PASSWORD",
-                        "账号已禁用");
-            } catch (Exception e) {
-                log.error("记录登录失败历史失败", e);
-            }
-            throw new RuntimeException("账号已被禁用，请联系管理员");
-        }
-
-        // 创建令牌
-        String token = tokenService.createToken(user.getId(), rememberMe);
-
-        // 更新最后登录时间和IP
-        user.setLastLoginTime(LocalDateTime.now());
-        user.setLastLoginIp(getClientIp());
-        userMapper.updateById(user);
-
-        // 记录登录成功历史
-        try {
-            loginHistoryService.recordLoginHistory(
-                    user.getId(),
-                    getClientIp(),
-                    Objects.requireNonNull(getRequest()).getHeader("User-Agent"),
-                    1, // 登录成功
-                    "PASSWORD",
-                    "密码登录成功");
-        } catch (Exception e) {
-            log.error("记录登录成功历史失败", e);
-        }
-
-        // 设置用户会话
-        HttpSession session = Objects.requireNonNull(getRequest()).getSession(true);
-        session.setAttribute(USER_SESSION_KEY, user);
-
-        // 构建响应
-        return LoginResponse.builder()
-                .username(user.getUsername())
-                .avatar(user.getAvatar())
-                .token(token)
-                .expireTime(rememberMe ? 30 * 24 * 60 * 60 : tokenService.getTokenExpireSeconds())
-                .build();
+        // 2. 获取对应的登录策略并处理
+        return loginStrategyFactory.getStrategy(request.getLoginType()).processLogin(request);
     }
 
     @Override
@@ -245,39 +129,7 @@ public class LoginServiceImpl implements LoginService {
 
     @Override
     public void logout() {
-        HttpServletRequest request = getRequest();
-        HttpServletResponse response = getResponse();
 
-        // 清除会话
-        HttpSession session = Objects.requireNonNull(request).getSession(false);
-        if (session != null) {
-            UserPo user = (UserPo) session.getAttribute(USER_SESSION_KEY);
-            session.removeAttribute(USER_SESSION_KEY);
-            session.invalidate();
-
-            // 如果有用户信息，清除该用户的所有令牌
-            if (user != null) {
-                tokenService.removeUserTokens(user.getId());
-            }
-        }
-
-        // 清除记住我Cookie
-        Cookie[] cookies = request.getCookies();
-        if (cookies != null) {
-            for (Cookie cookie : cookies) {
-                if (REMEMBER_ME_COOKIE.equals(cookie.getName())) {
-                    // 删除Redis中的令牌
-                    tokenService.removeToken(cookie.getValue());
-
-                    // 清除Cookie
-                    Cookie clearCookie = new Cookie(REMEMBER_ME_COOKIE, null);
-                    clearCookie.setMaxAge(0);
-                    clearCookie.setPath("/");
-                    Objects.requireNonNull(response).addCookie(clearCookie);
-                    break;
-                }
-            }
-        }
     }
 
     @Override

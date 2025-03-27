@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 @TableName("t_login_history")
-public class LoginHistoryPo extends BaseEntity {
+public class LoginHistoryPo extends BasePo {
 
     /**
      * 用户ID

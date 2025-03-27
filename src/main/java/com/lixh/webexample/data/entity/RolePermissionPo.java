@@ -10,7 +10,7 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("t_perm_role_permission")
-public class RolePermissionPo extends BaseEntity {
+public class RolePermissionPo extends BasePo {
 
     /**
      * 角色ID

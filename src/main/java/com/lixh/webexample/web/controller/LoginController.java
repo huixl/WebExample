@@ -24,15 +24,6 @@ public class LoginController {
     private final LoginHistoryService loginHistoryService;
 
     /**
-     * 用户注册
-     */
-    @PostMapping("/register")
-    public ResponseEntity<RegisterResponse> register(@Valid @RequestBody RegisterRequest registerRequest) {
-        RegisterResponse response = loginService.register(registerRequest);
-        return ResponseEntity.ok(response);
-    }
-
-    /**
      * 用户登录
      */
     @PostMapping("/login")
@@ -47,6 +38,15 @@ public class LoginController {
         }
 
         return ResponseEntity.ok(loginResponse);
+    }
+
+    /**
+     * 用户注册
+     */
+    @PostMapping("/register")
+    public ResponseEntity<RegisterResponse> register(@Valid @RequestBody RegisterRequest registerRequest) {
+        RegisterResponse response = loginService.register(registerRequest);
+        return ResponseEntity.ok(response);
     }
 
     /**
@@ -144,6 +144,13 @@ public class LoginController {
         }
 
         return ResponseEntity.ok(result);
+    }
+
+    @GetMapping("/test")
+    public ResponseEntity<PasswordChangeResponse> test() {
+
+        System.out.println(1);
+        return ResponseEntity.ok(new PasswordChangeResponse());
     }
 
 }

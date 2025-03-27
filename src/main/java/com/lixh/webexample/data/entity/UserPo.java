@@ -10,7 +10,7 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("t_user")
-public class UserPo extends BaseEntity {
+public class UserPo extends BasePo {
 
     /**
      * 用户名
