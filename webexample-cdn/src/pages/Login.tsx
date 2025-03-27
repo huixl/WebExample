@@ -21,22 +21,19 @@ const Login: React.FC = () => {
                 rememberMe: values.remember
             };
             
-            await authService.getLoginInfo();
             const response = await authService.login(loginRequest);
-            message.success('登录成功！');
-            // 存储用户信息
-            localStorage.setItem('user', JSON.stringify({
-                userId: response.userId,
-                username: response.username,
-                nickname: response.nickname,
-                avatarUrl: response.avatarUrl
-            }));
-            // 存储token
-            localStorage.setItem('token', response.token);
-            // 跳转到首页
-            navigate('/');
-        } catch (error: any) {
-            message.error(error.response?.data?.message || '登录失败，请重试');
+            if (response.success && response.token) {
+                if (response.user) {
+                    localStorage.setItem('user', JSON.stringify(response.user));
+                }
+                localStorage.setItem('token', response.token);
+                message.success('登录成功');
+                navigate('/home');
+            } else {
+                message.error(response.message || '登录失败');
+            }
+        } catch (error) {
+            message.error('登录失败，请稍后重试');
         } finally {
             setLoading(false);
         }

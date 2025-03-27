@@ -6,11 +6,15 @@ export interface LoginRequest {
 }
 
 export interface LoginResponse {
-    userId: number;
-    username: string;
-    nickname: string;
-    avatarUrl: string;
-    token: string;
+    success: boolean;
+    message?: string;
+    token?: string;
+    user?: {
+        id: number;
+        username: string;
+        email?: string;
+        phone?: string;
+    };
 }
 
 export interface RegisterRequest {
@@ -24,7 +28,7 @@ export interface RegisterRequest {
 
 export interface RegisterResponse {
     success: boolean;
-    message: string;
+    message?: string;
 }
 
 export interface LoginInfoResponse {
