@@ -28,7 +28,7 @@ spring:
       port: ${REDIS_PORT:6379}
       username: ${REDIS_USERNAME:default}
       password: ${REDIS_PASSWORD:OrderIQ@2024}
-      database: 0
+      database: 255
       timeout: 10000
       client-type: lettuce
       lettuce:
