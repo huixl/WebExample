@@ -9,6 +9,7 @@ const { TabPane } = Tabs;
 
 const Login: React.FC = () => {
     const [loading, setLoading] = useState(false);
+    const [messageApi, contextHolder] = message.useMessage();
     const navigate = useNavigate();
 
     const onFinish = async (values: any) => {
@@ -22,18 +23,16 @@ const Login: React.FC = () => {
             };
             
             const response = await authService.login(loginRequest);
-            if (response.success && response.token) {
-                if (response.user) {
-                    localStorage.setItem('user', JSON.stringify(response.user));
-                }
-                localStorage.setItem('token', response.token);
-                message.success('登录成功');
+            if (response.success && response.data?.token) {
+                const data:any = response.data;
+                localStorage.setItem('token', data.token);
+                messageApi.success('登录成功');
                 navigate('/home');
             } else {
-                message.error(response.message || '登录失败');
+                messageApi.error(response.message || '登录失败');
             }
         } catch (error) {
-            message.error('登录失败，请稍后重试');
+            messageApi.error('登录失败，请稍后重试');
         } finally {
             setLoading(false);
         }

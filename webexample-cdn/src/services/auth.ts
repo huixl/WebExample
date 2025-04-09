@@ -1,22 +1,18 @@
-import { LoginInfoResponse, LoginRequest, LoginResponse, RegisterRequest, RegisterResponse } from '../types/auth';
+import { LoginRequest, LoginResponse, RegisterRequest, RegisterResponse } from '../types/auth';
 import axios from '../utils/axios';
 
 export const authService = {
     async login(data: LoginRequest): Promise<LoginResponse> {
-        const response = await axios.post<LoginResponse>('/api/login', data);
+        const response = await axios.post<LoginResponse>('/sso/login', data);
         return response.data;
     },
 
     async register(data: RegisterRequest): Promise<RegisterResponse> {
-        const response = await axios.post<RegisterResponse>('/api/register', data);
+        const response = await axios.post<RegisterResponse>('/sso/register', data);
         return response.data;
     },
 
-    async getLoginInfo(): Promise<void> {
-       await axios.get<LoginInfoResponse>('/api/test');
-    },
-
     async logout(): Promise<void> {
-        await axios.post('/logout');
+        await axios.post('/sso/logout');
     }
 }; 

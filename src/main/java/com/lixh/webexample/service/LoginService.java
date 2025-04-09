@@ -1,9 +1,9 @@
-package com.lixh.webexample.service;
+package com.lixh.login.service;
 
 import java.util.List;
 
-import com.lixh.webexample.data.entity.UserPo;
-import com.lixh.webexample.web.dto.*;
+import com.lixh.login.data.entity.UserPo;
+import com.lixh.login.web.dto.*;
 
 /**
  * 用户服务接口

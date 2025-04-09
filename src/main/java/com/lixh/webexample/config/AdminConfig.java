@@ -1,4 +1,4 @@
-package com.lixh.webexample.config;
+package com.lixh.login.config;
 
 import lombok.Getter;
 import lombok.Setter;

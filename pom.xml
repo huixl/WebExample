@@ -12,6 +12,7 @@
     <groupId>com.lixh</groupId>
     <artifactId>WebExample</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <name>WebExample</name>
     <description>This is WebExample</description>
     <url />
@@ -21,6 +22,10 @@
     <developers>
         <developer />
     </developers>
+    <modules>
+        <module>web-example-starter</module>
+        <module>web-example-login</module>
+    </modules>
     <scm>
         <connection />
         <developerConnection />

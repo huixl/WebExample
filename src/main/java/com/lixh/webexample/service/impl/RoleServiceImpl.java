@@ -1,16 +1,16 @@
-package com.lixh.webexample.service.impl;
+package com.lixh.login.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.lixh.webexample.config.UserContext;
-import com.lixh.webexample.data.entity.RolePo;
-import com.lixh.webexample.data.entity.UserRolePo;
-import com.lixh.webexample.data.mapper.RoleMapper;
-import com.lixh.webexample.data.mapper.UserRoleMapper;
-import com.lixh.webexample.service.RoleService;
-import com.lixh.webexample.web.dto.RoleCreateRequest;
-import com.lixh.webexample.web.dto.RoleUpdateRequest;
+import com.lixh.login.config.UserContext;
+import com.lixh.login.data.entity.RolePo;
+import com.lixh.login.data.entity.UserRolePo;
+import com.lixh.login.data.mapper.RoleMapper;
+import com.lixh.login.data.mapper.UserRoleMapper;
+import com.lixh.login.service.RoleService;
+import com.lixh.login.web.dto.RoleCreateRequest;
+import com.lixh.login.web.dto.RoleUpdateRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.CacheEvict;

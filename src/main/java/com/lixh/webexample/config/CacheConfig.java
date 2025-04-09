@@ -1,4 +1,4 @@
-package com.lixh.webexample.config;
+package com.lixh.login.config;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;

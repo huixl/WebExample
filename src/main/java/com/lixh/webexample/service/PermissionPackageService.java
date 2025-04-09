@@ -1,8 +1,8 @@
-package com.lixh.webexample.service;
+package com.lixh.login.service;
 
-import com.lixh.webexample.data.entity.PermissionPackagePo;
-import com.lixh.webexample.web.dto.PermissionPackageCreateRequest;
-import com.lixh.webexample.web.dto.PermissionPackageUpdateRequest;
+import com.lixh.login.data.entity.PermissionPackagePo;
+import com.lixh.login.web.dto.PermissionPackageCreateRequest;
+import com.lixh.login.web.dto.PermissionPackageUpdateRequest;
 
 import java.util.List;
 

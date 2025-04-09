@@ -1,13 +1,13 @@
-package com.lixh.webexample.service.impl;
+package com.lixh.login.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.lixh.webexample.data.entity.PermissionPackagePo;
-import com.lixh.webexample.data.mapper.PermissionPackageMapper;
-import com.lixh.webexample.service.PermissionPackageService;
-import com.lixh.webexample.web.dto.PermissionPackageCreateRequest;
-import com.lixh.webexample.web.dto.PermissionPackageUpdateRequest;
-import com.lixh.webexample.web.exception.ResourceNotFoundException;
+import com.lixh.login.data.entity.PermissionPackagePo;
+import com.lixh.login.data.mapper.PermissionPackageMapper;
+import com.lixh.login.service.PermissionPackageService;
+import com.lixh.login.web.dto.PermissionPackageCreateRequest;
+import com.lixh.login.web.dto.PermissionPackageUpdateRequest;
+import com.lixh.login.web.exception.ResourceNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;

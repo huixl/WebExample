@@ -1,10 +1,10 @@
-package com.lixh.webexample.web.controller;
+package com.lixh.login.web.controller;
 
-import com.lixh.webexample.context.LoginContextHolder;
-import com.lixh.webexample.data.entity.UserPo;
-import com.lixh.webexample.service.LoginHistoryService;
-import com.lixh.webexample.service.LoginService;
-import com.lixh.webexample.web.dto.*;
+import com.lixh.login.context.LoginContextHolder;
+import com.lixh.login.data.entity.UserPo;
+import com.lixh.login.service.LoginHistoryService;
+import com.lixh.login.service.LoginService;
+import com.lixh.login.web.dto.*;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;

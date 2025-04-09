@@ -1,8 +1,8 @@
-package com.lixh.webexample.data.mapper;
+package com.lixh.login.data.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.lixh.webexample.data.entity.LoginHistoryPo;
-import com.lixh.webexample.data.entity.LoginPo;
+import com.lixh.login.data.entity.LoginHistoryPo;
+import com.lixh.login.data.entity.LoginPo;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

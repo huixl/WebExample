@@ -1,4 +1,4 @@
-package com.lixh.webexample.config.permission;
+package com.lixh.login.config.permission;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

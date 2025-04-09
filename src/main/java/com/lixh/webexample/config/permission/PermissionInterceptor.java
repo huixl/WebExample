@@ -1,10 +1,10 @@
-package com.lixh.webexample.config.permission;
+package com.lixh.login.config.permission;
 
 import com.alibaba.fastjson.JSON;
-import com.lixh.webexample.config.UserContext;
-import com.lixh.webexample.data.entity.UserPo;
-import com.lixh.webexample.service.PermissionService;
-import com.lixh.webexample.web.dto.ApiResponse;
+import com.lixh.login.config.UserContext;
+import com.lixh.login.data.entity.UserPo;
+import com.lixh.login.service.PermissionService;
+import com.lixh.login.web.dto.ApiResponse;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;

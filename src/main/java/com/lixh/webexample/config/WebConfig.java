@@ -1,6 +1,6 @@
-package com.lixh.webexample.config;
+package com.lixh.login.config;
 
-import com.lixh.webexample.config.permission.PermissionInterceptor;
+import com.lixh.login.config.permission.PermissionInterceptor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

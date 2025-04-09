@@ -1,6 +1,6 @@
-package com.lixh.webexample.config;
+package com.lixh.login.config;
 
-import com.lixh.webexample.data.entity.UserPo;
+import com.lixh.login.data.entity.UserPo;
 import lombok.extern.slf4j.Slf4j;
 
 /**

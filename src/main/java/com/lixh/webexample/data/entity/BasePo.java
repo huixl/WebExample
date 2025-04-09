@@ -1,10 +1,10 @@
-package com.lixh.webexample.data.entity;
+package com.lixh.login.data.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableLogic;
-import com.lixh.webexample.config.UserContext;
+import com.lixh.login.config.UserContext;
 import lombok.Data;
 
 import java.time.LocalDateTime;

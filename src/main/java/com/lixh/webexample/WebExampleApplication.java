@@ -1,4 +1,4 @@
-package com.lixh.webexample;
+package com.lixh.login;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -6,6 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * @author lixionghui
+ */
 @Slf4j
 @SpringBootApplication(scanBasePackages = "com.lixh.webexample")
 @MapperScan("com.lixh.webexample.data.mapper")

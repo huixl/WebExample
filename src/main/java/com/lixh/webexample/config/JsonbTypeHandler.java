@@ -1,4 +1,4 @@
-package com.lixh.webexample.config;
+package com.lixh.login.config;
 
 import com.alibaba.fastjson.JSON;
 import org.apache.ibatis.type.BaseTypeHandler;

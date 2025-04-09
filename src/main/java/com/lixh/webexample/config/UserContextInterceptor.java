@@ -1,7 +1,7 @@
-package com.lixh.webexample.config;
+package com.lixh.login.config;
 
-import com.lixh.webexample.data.entity.UserPo;
-import com.lixh.webexample.service.LoginService;
+import com.lixh.login.data.entity.UserPo;
+import com.lixh.login.service.LoginService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;

@@ -1,4 +1,4 @@
-package com.lixh.webexample.web.dto;
+package com.lixh.login.web.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

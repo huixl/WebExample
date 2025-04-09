@@ -1,8 +1,8 @@
-package com.lixh.webexample.service;
+package com.lixh.login.service;
 
-import com.lixh.webexample.data.entity.RolePo;
-import com.lixh.webexample.web.dto.RoleCreateRequest;
-import com.lixh.webexample.web.dto.RoleUpdateRequest;
+import com.lixh.login.data.entity.RolePo;
+import com.lixh.login.web.dto.RoleCreateRequest;
+import com.lixh.login.web.dto.RoleUpdateRequest;
 
 import java.util.List;
 

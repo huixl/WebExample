@@ -1,6 +1,6 @@
-package com.lixh.webexample.service;
+package com.lixh.login.service;
 
-import com.lixh.webexample.data.entity.PermissionPo;
+import com.lixh.login.data.entity.PermissionPo;
 
 import java.util.List;
 import java.util.Set;

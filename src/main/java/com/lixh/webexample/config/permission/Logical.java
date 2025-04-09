@@ -1,4 +1,4 @@
-package com.lixh.webexample.config.permission;
+package com.lixh.login.config.permission;
 
 /**
  * 权限逻辑类型

@@ -1,9 +1,9 @@
-package com.lixh.webexample.converter;
+package com.lixh.login.converter;
 
-import com.lixh.webexample.dto.request.FieldConfigRequest;
-import com.lixh.webexample.dto.request.ParseSubmitRequest;
-import com.lixh.webexample.dto.request.UserInputRequest;
-import com.lixh.webexample.dto.response.FieldConfigResponse;
+import com.lixh.login.dto.request.FieldConfigRequest;
+import com.lixh.login.dto.request.ParseSubmitRequest;
+import com.lixh.login.dto.request.UserInputRequest;
+import com.lixh.login.dto.response.FieldConfigResponse;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Named;

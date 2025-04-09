@@ -1,4 +1,4 @@
-package com.lixh.webexample.data.entity;
+package com.lixh.login.data.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;

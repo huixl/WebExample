@@ -8,12 +8,11 @@ export interface LoginRequest {
 export interface LoginResponse {
     success: boolean;
     message?: string;
-    token?: string;
-    user?: {
-        id: number;
-        username: string;
-        email?: string;
-        phone?: string;
+    data?: {
+        userId: number;
+        avatarUrl: string;
+        nickname?: string;
+        token?: string;
     };
 }
 

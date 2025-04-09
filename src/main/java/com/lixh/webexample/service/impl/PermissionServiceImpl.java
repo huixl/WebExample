@@ -1,12 +1,12 @@
-package com.lixh.webexample.service.impl;
+package com.lixh.login.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.lixh.webexample.config.UserContext;
-import com.lixh.webexample.data.entity.PermissionPo;
-import com.lixh.webexample.data.entity.UserPo;
-import com.lixh.webexample.data.mapper.PermissionMapper;
-import com.lixh.webexample.service.PermissionService;
+import com.lixh.login.config.UserContext;
+import com.lixh.login.data.entity.PermissionPo;
+import com.lixh.login.data.entity.UserPo;
+import com.lixh.login.data.mapper.PermissionMapper;
+import com.lixh.login.service.PermissionService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

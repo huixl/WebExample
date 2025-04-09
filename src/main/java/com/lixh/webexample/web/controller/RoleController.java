@@ -1,9 +1,9 @@
-package com.lixh.webexample.web.controller;
+package com.lixh.login.web.controller;
 
-import com.lixh.webexample.config.permission.PermissionCheck;
-import com.lixh.webexample.data.entity.RolePo;
-import com.lixh.webexample.service.RoleService;
-import com.lixh.webexample.web.dto.*;
+import com.lixh.login.config.permission.PermissionCheck;
+import com.lixh.login.data.entity.RolePo;
+import com.lixh.login.service.RoleService;
+import com.lixh.login.web.dto.*;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

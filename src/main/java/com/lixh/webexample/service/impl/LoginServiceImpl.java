@@ -1,4 +1,4 @@
-package com.lixh.webexample.service.impl;
+package com.lixh.login.service.impl;
 
 import java.util.List;
 import java.util.Objects;
@@ -11,14 +11,14 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.lixh.webexample.data.entity.UserPo;
-import com.lixh.webexample.data.mapper.UserMapper;
-import com.lixh.webexample.exception.BusinessException;
-import com.lixh.webexample.service.LoginHistoryService;
-import com.lixh.webexample.service.LoginService;
-import com.lixh.webexample.service.TokenService;
-import com.lixh.webexample.strategy.LoginStrategyFactory;
-import com.lixh.webexample.web.dto.*;
+import com.lixh.login.data.entity.UserPo;
+import com.lixh.login.data.mapper.UserMapper;
+import com.lixh.login.exception.BusinessException;
+import com.lixh.login.service.LoginHistoryService;
+import com.lixh.login.service.LoginService;
+import com.lixh.login.service.TokenService;
+import com.lixh.login.strategy.LoginStrategyFactory;
+import com.lixh.login.web.dto.*;
 
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
