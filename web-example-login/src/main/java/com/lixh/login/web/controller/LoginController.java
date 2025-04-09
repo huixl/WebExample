@@ -97,55 +97,6 @@ public class LoginController {
     }
 
     /**
-     * 获取用户登录历史
-     *
-     * @param limit 限制数量，默认为10
-     * @return 登录历史列表
-     */
-    @GetMapping("/login-history")
-    public ResponseEntity<List<LoginHistoryResponse>> getLoginHistory(@RequestParam(required = false) Integer limit) {
-        AccountPo currentUser = loginService.getCurrentUser();
-        if (currentUser == null) {
-            return ResponseEntity.status(401).build();
-        }
-
-        List<LoginHistoryResponse> history = loginHistoryService.getUserLoginHistory(currentUser.getId(), limit);
-        return ResponseEntity.ok(history);
-    }
-
-    /**
-     * 验证当前密码
-     *
-     * @param passwordVerifyRequest 密码验证请求
-     * @return 验证结果
-     */
-    @PostMapping("/verify-password")
-    public ResponseEntity<Boolean> verifyPassword(@Valid @RequestBody PasswordVerifyRequest passwordVerifyRequest) {
-        boolean result = loginService.verifyCurrentPassword(passwordVerifyRequest);
-        return ResponseEntity.ok(result);
-    }
-
-    /**
-     * 修改密码
-     *
-     * @param passwordChangeRequest 密码修改请求
-     * @return 修改结果
-     */
-    @PostMapping("/change-password")
-    public ResponseEntity<PasswordChangeResponse> changePassword(
-            @Valid @RequestBody PasswordChangeRequest passwordChangeRequest,
-            HttpServletResponse response) {
-        PasswordChangeResponse result = loginService.changePassword(passwordChangeRequest);
-
-        // 如果密码修改成功，清除认证Cookie
-        if (result.isSuccess()) {
-            LoginContextHolder.clearAuthCookie(response);
-        }
-
-        return ResponseEntity.ok(result);
-    }
-
-    /**
      * 测试
      * @return
      */
