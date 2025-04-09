@@ -25,6 +25,7 @@
     <modules>
         <module>web-example-starter</module>
         <module>web-example-login</module>
+        <module>web-example-permission</module>
     </modules>
     <scm>
         <connection />

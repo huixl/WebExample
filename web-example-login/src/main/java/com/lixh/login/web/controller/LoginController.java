@@ -59,7 +59,6 @@ public class LoginController {
         // 从Cookie中获取token并刷新用户会话
         String token = LoginContextHolder.getTokenFromCookie(request);
         if (token != null) {
-            // 使用新的方法验证token并记录登录历史（设备信息变化时）
             loginService.refreshUserSessionAndRecordHistory(token, request.getHeader("User-Agent"),
                 LoginContextHolder.getClientIp(request));
             // 刷新Cookie过期时间

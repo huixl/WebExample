@@ -103,7 +103,6 @@ public class PasswordStrategy extends AbstractLoginStrategy {
         accountMapper.insert(accountPo);
 
         // 账密登陆方式
-
         LoginPo passwordLoginPo = new LoginPo();
         passwordLoginPo.setAccountId(accountPo.getId());
         passwordLoginPo.setLoginTypeId(collect.get(LoginTypeEnum.USERNAME_PASSWORD.getCode()));
