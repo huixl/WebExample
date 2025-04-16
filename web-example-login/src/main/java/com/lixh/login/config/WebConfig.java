@@ -11,6 +11,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.util.List;
 
+/**
+ * @author lixionghui
+ */
 @Configuration
 @RequiredArgsConstructor
 public class WebConfig implements WebMvcConfigurer {
@@ -18,6 +21,8 @@ public class WebConfig implements WebMvcConfigurer {
     private final LoggingInterceptor loggingInterceptor;
 
     private final UserContextInterceptor userContextInterceptor;
+
+    private final LoginInterceptor loginInterceptor;
 
     @Bean
     public CharacterEncodingFilter characterEncodingFilter() {
@@ -33,7 +38,12 @@ public class WebConfig implements WebMvcConfigurer {
         // 添加用户上下文拦截器
         registry.addInterceptor(userContextInterceptor)
                 .addPathPatterns("/**")
-                .excludePathPatterns("/api/user/login", "/api/user/register", "/workbench/**");
+                .excludePathPatterns("/login", "/register");
+
+        // 添加登陆验证拦截器
+        registry.addInterceptor(loginInterceptor)
+                .addPathPatterns("/**")
+                .excludePathPatterns("/login", "/register");
 
         // 添加日志拦截器
         registry.addInterceptor(loggingInterceptor)

@@ -3,4 +3,5 @@
 target/
 node_modules/
 logs/
+web-example-starter/src/main/resources/static/
 *.log

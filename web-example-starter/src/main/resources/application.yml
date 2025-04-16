@@ -1,15 +1,15 @@
 server:
-  port: 9000
+  port: 9001
   servlet:
     encoding:
       charset: UTF-8
       force: true
       enabled: true
+    context-path: /api  # 根路径
 
 spring:
   application:
     name: WebExample
-
   datasource:
     url: jdbc:postgresql://${DB_HOST:pgm-bp15w07805zfx1ykmo.pg.rds.aliyuncs.com}:${DB_PORT:5432}/${DB_NAME:webexample}?useSSL=false&serverTimezone=UTC
     driver-class-name: org.postgresql.Driver
@@ -43,6 +43,21 @@ spring:
     redis:
       time-to-live: 1800000 # 默认缓存过期时间：30分钟
       cache-null-values: false # 不缓存空值
+
+  # 静态资源和模板配置
+  mvc:
+    static-path-pattern: /api/**
+  web:
+    resources:
+      static-locations: classpath:/static/
+  thymeleaf:
+    prefix: classpath:/static/
+    suffix: .html
+    mode: HTML
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    cache: false  # 开发环境关闭缓存
 
 mybatis-plus:
   type-aliases-package: com.lixh.webexample.data.entity

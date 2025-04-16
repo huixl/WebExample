@@ -1,5 +1,6 @@
 package com.lixh.login.web.controller;
 
+import com.lixh.login.annotation.NoRequireLogin;
 import com.lixh.login.context.LoginContextHolder;
 import com.lixh.login.data.entity.AccountPo;
 import com.lixh.login.service.LoginHistoryService;
@@ -11,8 +12,6 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/sso")
@@ -27,6 +26,7 @@ public class LoginController {
      * 用户登录
      */
     @PostMapping("/login")
+    @NoRequireLogin
     public ResponseEntity<LoginResponse> login(@Valid @RequestBody LoginRequest loginRequest,
         HttpServletResponse response) {
 
@@ -44,6 +44,7 @@ public class LoginController {
      * 用户注册
      */
     @PostMapping("/register")
+    @NoRequireLogin
     public ResponseEntity<RegisterResponse> register(@Valid @RequestBody RegisterRequest registerRequest) {
         RegisterResponse response = loginService.register(registerRequest);
         return ResponseEntity.ok(response);

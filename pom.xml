@@ -26,6 +26,8 @@
         <module>web-example-starter</module>
         <module>web-example-login</module>
         <module>web-example-permission</module>
+        <module>web-example-notice</module>
+        <module>web-example-pay</module>
     </modules>
     <scm>
         <connection />
